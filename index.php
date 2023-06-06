@@ -6,7 +6,7 @@ include 'layouts/header.php';
             <div class="hero-slider section">
 
                 <!--Hero Item start-->
-                <div class="hero-item  bg-image" data-bg="assets/images/hero/hero-1.jpg">
+                <div class="hero-item  bg-image" data-bg="htmldemo.net/nelson/nelson/assets/images/hero/hero-1.jpg">
                     <div class="container">
                         <div class="row">
                             <div class="col-12">
@@ -27,7 +27,7 @@ include 'layouts/header.php';
                 <!--Hero Item end-->
 
                 <!--Hero Item start-->
-                <div class="hero-item bg-image" data-bg="assets/images/hero/hero-2.jpg">
+                <div class="hero-item bg-image" data-bg="htmldemo.net/nelson/nelson/assets/images/hero/hero-2.jpg">
                     <div class="container">
                         <div class="row">
                             <div class="col-12">
@@ -60,12 +60,12 @@ include 'layouts/header.php';
                         <div class="single-banner-item mb-30">
                             <div class="banner-image">
                                 <a href="shop.html">
-                                    <img src="assets/images/banner/banner1.jpg" alt="">
+                                    <img src="htmldemo.net/nelson/nelson/assets/images/banner/banner1.jpg" alt="">
                                 </a>
                             </div>
                             <div class="banner-content">
                                 <h3 class="title">OFFICE <br> FURNITURE</h3>
-                                    <a href="shop.html">SHOP NOW</a>
+                                    <a href="htmldemo.net/nelson/nelson/shop.html">SHOP NOW</a>
                             </div>
                         </div>
                         <!-- Single Banner End -->
@@ -75,12 +75,12 @@ include 'layouts/header.php';
                         <div class="single-banner-item mb-30">
                             <div class="banner-image">
                                 <a href="shop-left-sidebar.html">
-                                    <img src="assets/images/banner/banner2.jpg" alt="">
+                                    <img src="htmldemo.net/nelson/nelson/assets/images/banner/banner2.jpg" alt="">
                                 </a>
                             </div>
-                            <div class="banner-content tr-right">
+                            <div class="banner-content ">
                                 <h3 class="title">HOME <br> FURNITURE</h3>
-                                    <a href="shop.html">SHOP NOW</a>
+                                    <a href="htmldemo.net/nelson/nelson/shop.html">SHOP NOW</a>
                             </div>
                         </div>
                         <!-- Single Banner End -->
@@ -128,8 +128,8 @@ include 'layouts/header.php';
                                             <span>-20%</span>
                                         </div>
                                         <a href="single-product.html">
-                                            <img src="assets/images/product/product-1.jpg" class="img-fluid" alt="">
-                                            <img src="assets/images/product/product-2.jpg" class="img-fluid" alt="">
+                                            <img src="htmldemo.net/nelson/nelson/assets/images/product/product-1.jpg" class="img-fluid" alt="">
+                                            <img src="htmldemo.net/nelson/nelson/assets/images/product/product-2.jpg" class="img-fluid" alt="">
                                         </a>
 
                                         <div class="product-action">

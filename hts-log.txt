@@ -1,0 +1,21 @@
+HTTrack3.49-2+htsswf+htsjava launched on Sat, 03 Jun 2023 14:40:15 at https://htmldemo.net/nelson/nelson/index.html +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://htmldemo.net/nelson/nelson/index.html -O1 "D:\New folder\RichfieldChairs" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+14:40:55	Error: 	"Not Found" (404) at link https://htmldemo.net/nelson/nelson/shop-left-sidebar.html (from https://htmldemo.net/nelson/nelson/index.html)
+14:40:55	Error: 	"Not Found" (404) at link https://htmldemo.net/nelson/nelson/wishlit.html (from https://htmldemo.net/nelson/nelson/index.html)
+14:40:55	Error: 	"Not Found" (404) at link https://htmldemo.net/nelson/nelson/assets/css/fonts/fontawesome-webfont.ttf?v=4.7.0 (from https://htmldemo.net/nelson/nelson/assets/css/vendor/iconfont.min.css)
+14:40:56	Error: 	"Not Found" (404) at link https://htmldemo.net/nelson/nelson/assets/css/plugins/images/ui-icons_444444_256x240.png (from https://htmldemo.net/nelson/nelson/assets/css/plugins/plugins.css)
+14:40:56	Error: 	"Not Found" (404) at link https://htmldemo.net/nelson/nelson/assets/css/plugins/images/ui-icons_555555_256x240.png (from https://htmldemo.net/nelson/nelson/assets/css/plugins/plugins.css)
+14:40:56	Error: 	"Not Found" (404) at link https://htmldemo.net/nelson/nelson/assets/css/plugins/images/ui-icons_ffffff_256x240.png (from https://htmldemo.net/nelson/nelson/assets/css/plugins/plugins.css)
+14:40:56	Error: 	"Not Found" (404) at link https://htmldemo.net/nelson/nelson/assets/css/plugins/images/ui-icons_777620_256x240.png (from https://htmldemo.net/nelson/nelson/assets/css/plugins/plugins.css)
+14:40:56	Error: 	"Not Found" (404) at link https://htmldemo.net/nelson/nelson/assets/css/plugins/images/ui-icons_cc0000_256x240.png (from https://htmldemo.net/nelson/nelson/assets/css/plugins/plugins.css)
+14:40:56	Error: 	"Not Found" (404) at link https://htmldemo.net/nelson/nelson/assets/css/plugins/images/ui-icons_777777_256x240.png (from https://htmldemo.net/nelson/nelson/assets/css/plugins/plugins.css)
+14:40:56	Error: 	"Not Found" (404) at link https://htmldemo.net/nelson/nelson/assets/images/icons/quote-left.png (from https://htmldemo.net/nelson/nelson/assets/css/style.css)
+
+HTTrack Website Copier/3.49-2 mirror complete in 41 seconds : 145 links scanned, 134 files written (6337233 bytes overall) [2576034 bytes received at 62830 bytes/sec], 4839537 bytes transferred using HTTP compression in 66 files, ratio 19%, 36.2 requests per connection
+(10 errors, 0 warnings, 0 messages)

@@ -1,6 +1,7 @@
 <?php
 include 'layouts/header.php';
 // sua cai nay
+include './2_Controller/indexController.php';
 
 ?>
         <!--slider section start-->
@@ -93,37 +94,12 @@ include 'layouts/header.php';
         <!-- Banner section End -->
 
 
+        <?php 
+            hienThiDanhMucSanPham();
+        ?>
 
-
-        <!--Product section start-->
-        <div class="product-section section pt-70 pt-lg-50 pt-md-40 pt-sm-30 pt-xs-20 pb-55 pb-lg-35 pb-md-25 pb-sm-15 pb-xs-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <div class="section-title text-center mb-15">
-                            <h2>Popular Furniture</h2>
-                        </div>
-                        
-                    </div>
-                </div>
-                <div class="tab-content" style="padding-top:40px ;">
-                    <div id="home" class="tab-pane fade active show" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-                        <div class="row">
-
-                        <?PHp
-include './2_Controller/indexController.php';
-?>
-
-                            
-                        </div>
-                    </div>
-                    
-                </div>
-
-
-            </div>
-        </div>
-        <!--Product section end-->
+       
+        
 
 
 

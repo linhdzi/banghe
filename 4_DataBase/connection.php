@@ -4,7 +4,7 @@ function connect(){
     $host = "localhost";
     $username = "root";
     $password = "password";
-    $dbname = "chairshop_db.sql";
+    $dbname = "chairshop_db2.sql";
 
     // Kết nối đến CSDL
     $conn = mysqli_connect($host, $username, $password, $dbname);

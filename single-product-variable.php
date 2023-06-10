@@ -579,7 +579,8 @@
                                                 <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
                                                 <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
                                                 <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-vimeo"></i></a></li>
+                                                <li><a href="./assets/words/Thong so san pham.docx"><i class="fa fa-vimeo"></i></a></li>
+                                                <li><a href="./assets/words/Thong so san pham.docx"><i class="fa fa-download"></i></a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -1266,7 +1267,8 @@
                                                 <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
                                                 <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
                                                 <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-vimeo"></i></a></li>
+                                                <li><a href="./assets/words/Thong so san pham.docx"><i class="fa fa-vimeo"></i></a></li>
+                                                <li><a href="./assets/words/Thong so san pham.docx"><i class="fa fa-download"></i></a></li>
                                             </ul>
                                         </div>
                                     </div>

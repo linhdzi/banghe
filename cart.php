@@ -109,20 +109,8 @@ include 'layouts/header.php';
                                         </div>
                                     </form>
                                 </div>
-                                <!-- Discount Coupon -->
-                                <div class="discount-coupon">
-                                    <h4>Discount Coupon Code</h4>
-                                    <form action="#">
-                                        <div class="row">
-                                            <div class="col-md-6 col-12 mb-25">
-                                                <input type="text" placeholder="Coupon Code">
-                                            </div>
-                                            <div class="col-md-6 col-12 mb-25">
-                                                <button class="btn">Apply Code</button>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
+                               89 <!-- Discount Coupon -->
+                                
                             </div>
 
                             <!-- Cart Summary -->
@@ -148,39 +136,8 @@ include 'layouts/header.php';
                 </div>
             </div>
         </div>
-        <!--Cart section end-->
-        <!-- Newsletter Section Start -->
-        <div class="newsletter-section section bg-gray-two pt-100 pt-lg-80 pt-md-70 pt-sm-60 pt-xs-50 pb-95 pb-lg-75 pb-md-65 pb-sm-60 pb-xs-50">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6">
-                        <div class="newsletter-content">
-                            <h2>Subscribe Our Newsletter</h2>
-                            <p>Subscribe Today for free and save 10% on your first purchase.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="newsletter-wrap">
-                            <div class="newsletter-form">
-                                <form id="mc-form" class="mc-form">
-                                    <input type="email" placeholder="Enter Your Email Address Here..." required>
-                                    <button type="submit" value="submit">SUBSCRIBE!</button>
-                                </form>
-
-                            </div>
-                            <!-- mailchimp-alerts Start -->
-                            <div class="mailchimp-alerts">
-                                <div class="mailchimp-submitting"></div><!-- mailchimp-submitting end -->
-                                <div class="mailchimp-success"></div><!-- mailchimp-success end -->
-                                <div class="mailchimp-error"></div><!-- mailchimp-error end -->
-                            </div>
-                            <!-- mailchimp-alerts end -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Newsletter Section End -->
+        
+       
         <?php
 include 'layouts/footer.php';
 ?>   

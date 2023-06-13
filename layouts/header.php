@@ -1,3 +1,5 @@
+
+
 <!doctype html>
 <html class="no-js" lang="zxx">
 
@@ -49,17 +51,8 @@
                                             
                                         </li>
         
-                                        <li><a href="blog.html">Pages</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="blog.html">Blog Three Column</a></li>
-                                                <li><a href="blog-two-column.html">Blog Two Column</a></li>
-                                                <li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
-                                                <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
-                                                <li><a href="blog-details.html">Blog Details</a></li>
-                                                <li><a href="blog-details-gallery.html">Blog Details Gallery</a></li>
-                                                <li><a href="blog-details-audio.html">Blog Details Audio</a></li>
-                                                <li><a href="blog-details-video.html">Blog Details Video</a></li>
-                                            </ul>
+                                        <li><a href="blog.html">About Us</a>
+                                            
                                         </li>
                                         <li><a href="htmldemo.net/nelson/nelson/contact.html">Contact</a></li>
                                     </ul>
@@ -79,27 +72,12 @@
                                             <li class="currency-menu"><a href="#"><i class="flaticon-user"></i></a>
                                                 <!--Crunccy dropdown-->
                                                 <ul class="currency-dropdown">
-                                                    <!--Language Currency Start-->
-                                                    <li><a href="#">language</a>
-                                                        <ul>
-                                                            <li class="active"><a href="#"><img src="assets/images/icons/en-gb.png" alt="">English</a></li>
-                                                            <li><a href="#"><img src="assets/images/icons/de-de.png" alt="">French</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <!--Language Currency End-->
-                                                    <!--USD Currency Start-->
-                                                    <li><a href="#">Currency</a>
-                                                        <ul>
-                                                            <li><a href="#"> € Euro</a></li>
-                                                            <li><a href="#"> $ US Dollar</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <!--USD Currency End-->
+                                                   
                                                     <!--Account Currency Start-->
                                                     <li><a href="my-account.html">My account</a>
                                                         <ul>
                                                             <li><a href="login-register.html">Login</a></li>
-                                                            <li><a href="checkout.html">Checkout</a></li>
+                                                            
                                                             <li><a href="my-account.html">My account</a></li>
                                                             <li><a href="cart.html">Cart</a></li>
                                                             <li><a href="wishlist.html">Wishlist</a></li>
@@ -158,8 +136,8 @@
                                 </div>
                                 <div class="col-sm-6">
                                     <form class="d-flex" role="search">
-                                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                                        <button class="btn btn-outline-success" type="submit">Search</button>
+                                        <input name="search" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                        <button class="btn btn-outline-success" type="submit" value="insert" name="insert">Search</button>
                                       </form>
                                 </div>
                                 

@@ -1,4 +1,3 @@
-
 <?php
 include 'layouts/header.php';
 ?>
@@ -11,7 +10,7 @@ include 'layouts/header.php';
                         <div class="page-banner text-start">
                             <h2>About</h2>
                             <ul class="page-breadcrumb">
-                                <li><a href="index.html">Home</a></li>
+                                <li><a href="index.php">Home</a></li>
                                 <li>About</li>
                             </ul>
                         </div>
@@ -37,10 +36,12 @@ include 'layouts/header.php';
                     <div class="col-lg-6 col-12">
                         <!--About Us Content Start-->
                         <div class="about-us-content pl-30 pl-md-0 pl-sm-0 pl-xs-0">
-                            <span>Since 2019</span>
-                            <h2>Provide Best Quality Furnitures for Our Cleint</h2>
-                            <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam ?</p>
-                            <p>consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam</p>
+                            <h2>About Richfield Chair</h2>
+                            <p>Richfield Chair is a company specializing in manufacturing and supplying high-quality chairs for customers domestically and internationally. The company was established in 1995 and has over 25 years of experience in the chair manufacturing industry.</p>
+                            <p>We are committed to providing customers with beautiful, high-quality, and functional chairs with various designs and styles. The company has a team of professional designers and engineers who are always creative and researching to create products that meet the needs of customers while ensuring high aesthetic value.</p>
+                            <p>Use high-quality materials such as wood, metal, plastic, leather, fabric, etc. to manufacture chairs,the company's products are produced on modern production lines, ensuring accuracy and high durability.</p>
+                            <p>Richfield Chair provides various types of chairs suitable for different purposes such as office chairs, dining chairs, lounge chairs, sofas, bar chairs, car seats, etc. The company's products are widely distributed at many locations across the country and are trusted by many customers both domestically and internationally.</p>
+                            <p>In addition, Richfield Chair also provides customers with the best after-sales service, ensuring quick and effective warranty processes. With a commitment to bringing customer satisfaction, Richfield Chair has become one of the leading and reputable chair brands in the market.</p>
                         </div>
                         <!--About Us Content End-->
                     </div>
@@ -48,35 +49,6 @@ include 'layouts/header.php';
             </div>
         </div>
         <!--About Us Area End-->
-
-
-        <!-- Banner section start -->
-        <div class="banner-section section pb-40 pb-sm-30 pb-xs-0">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <!-- Single Banner Start -->
-                        <div class="single-banner-item pt-100 pt-md-80 pt-sm-70 pt-xs-50 pb-120 pb-md-100 pb-sm-90 pb-xs-50 mb-30 bg-image" data-bg="assets/images/banner/banner3.jpg">
-                            <div class="sp-banner-content">
-                                <span class="normat-text">DISCOUNTED UP TO 50%</span>
-                                <h2 class="title">Zigzag King Chair</h2>
-                                <span class="normat-text">LIMITED TIME OFEER</span>
-                                <div class="countdown-area">
-                                    <div class="product-countdown" data-countdown="2023/12/01"></div>
-                                </div>
-                                <a href="shop.html">SHOP NOW</a>
-                            </div>
-                        </div>
-                        <!-- Single Banner End -->
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Banner section End -->
-
-
-
-
         <!--Features section start-->
         <div class="features-section section pt-30 pt-lg-15 pt-md-0 pt-sm-0 pt-xs-15">
             <div class="container">
@@ -126,9 +98,6 @@ include 'layouts/header.php';
             </div>
         </div>
         <!--Features section end-->
-
-
-
         <!--About Us Team Start-->
         <div class="about-us-team-area section pt-65 pt-lg-45 pt-md-35 pt-sm-20 pt-xs-15 pb-70 pb-lg-50 pb-md-40 pb-sm-30 pb-xs-20">
             <div class="container">
@@ -150,10 +119,7 @@ include 'layouts/header.php';
                                 <div class="team-hover-info">
                                     <h2><a href="#">Marcos Alonso</a></h2>
                                     <ul class="team-social">
-                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
                                         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -170,10 +136,9 @@ include 'layouts/header.php';
                                 <div class="team-hover-info">
                                     <h2><a href="#">Isaac Newton</a></h2>
                                     <ul class="team-social">
-                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+
                                         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+
                                     </ul>
                                 </div>
                             </div>
@@ -190,10 +155,7 @@ include 'layouts/header.php';
                                 <div class="team-hover-info">
                                     <h2><a href="#">Charlotte Taylor</a></h2>
                                     <ul class="team-social">
-                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
                                         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -204,106 +166,6 @@ include 'layouts/header.php';
             </div>
         </div>
         <!--About Us Team End-->
-
-
-        <!-- Testimonial Area Start -->
-        <div class="testimonial-section section pb-100 pb-lg-80 pb-md-70 pb-sm-60 pb-xs-50">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="testimonial-wrap bg-gray-two pt-45 pb-30">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-12">
-                                    <div class="testimonial-wrapper section-space--inner">
-                                        <div class="testimonial-slider-content">
-                                            <div class="item">
-                                                <div class="row align-items-center">
-                                                    <div class="col-md-5">
-                                                        <div class="testimonial-image">
-                                                            <img src="assets/images/testimonial/testimonial-2.png" alt="">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-7">
-                                                        <div class="testimonial testimonial-style-2 gutter-item">
-                                                            <div class="testimonial-inner">
-                                                                <div class="testimonial-author">
-                                                                    <div class="author-thumb">
-                                                                        <img src="assets/images/author/author-1.png" alt="">
-                                                                    </div>
-                                                                    <div class="author-info">
-                                                                        <h4>Zeniyea Henderson</h4>
-                                                                        <span>CTO & CO Founder, Axels</span>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="testimonial-description">
-                                                                    <blockquote class="testimonials-text">
-                                                                        <p>“I am very much happy to buy product from nelson, the provide the best quality of product. Product quality is very satisfactory. Also the creative design of their Furniture make me happy.”</p>
-                                                                    </blockquote>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="item">
-                                                <div class="row align-items-center">
-                                                    <div class="col-md-5">
-                                                        <div class="testimonial-image">
-                                                            <img src="assets/images/testimonial/testimonial-1.png" alt="">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-7">
-                                                        <div class="testimonial testimonial-style-2 gutter-item">
-                                                            <div class="testimonial-inner">
-                                                                <div class="testimonial-author">
-                                                                    <div class="author-thumb">
-                                                                        <img src="assets/images/author/author-1.png" alt="">
-                                                                    </div>
-                                                                    <div class="author-info">
-                                                                        <h4>Zeniyea Henderson</h4>
-                                                                        <span>CTO & CO Founder, Axels</span>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="testimonial-description">
-                                                                    <blockquote class="testimonials-text">
-                                                                        <p>“I am very much happy to buy product from nelson, the provide the best quality of product. Product quality is very satisfactory. Also the creative design of their Furniture make me happy.”</p>
-                                                                    </blockquote>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Testimonial Area End -->
-
-        <!-- Newsletter Section Start -->
-        <div class="newsletter-section section bg-gray-two pt-100 pt-lg-80 pt-md-70 pt-sm-60 pt-xs-50 pb-95 pb-lg-75 pb-md-65 pb-sm-60 pb-xs-50">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6">
-                        <div class="newsletter-content">
-                            <h2>Subscribe Our Newsletter</h2>
-                            <p>Subscribe Today for free and save 10% on your first purchase.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="newsletter-wrap">
-                            <div class="newsletter-form">
-                                <form id="mc-form" class="mc-form">
-                                    <input type="email" placeholder="Enter Your Email Address Here..." required>
-                                    <button type="submit" value="submit">SUBSCRIBE!</button>
-                                </form>
-
-                            </div>
                             <!-- mailchimp-alerts Start -->
                             <div class="mailchimp-alerts">
                                 <div class="mailchimp-submitting"></div><!-- mailchimp-submitting end -->

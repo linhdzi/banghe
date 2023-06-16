@@ -2499,6 +2499,34 @@ ul.cart-items > li {
           transform: scale(1.2);
 }
 
+.pivacy-policy-contect h1{
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #151515;
+  margin-bottom: 20px;
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .pivacy-policy-contect h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    max-width: 470px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .pivacy-policy-contect h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+}
+.pivacy-policy-contect p {
+  line-height: 22px;
+  max-width: 470px;
+}
+
+
 .single-team {
   position: relative;
 }

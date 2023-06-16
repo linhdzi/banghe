@@ -1,4 +1,7 @@
+<?php
+require_once './2_Controller/headerController.php';
 
+?>
 
 <!doctype html>
 <html class="no-js" lang="zxx">
@@ -8,11 +11,14 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Nelson - Furniture eCommerce Bootstrap 4 Template</title>
+    <title>Chair Shop </title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <link rel="icon" href="assets/images/elysia.png"  type="image/x-icon">
+
     <!-- Place favicon.ico in the root directory -->
-    <link href="htmldemo.net/nelson/nelson/assets/images/favicon.ico" type="img/x-icon" rel="shortcut icon">
+    <link href="htmldemo.net/nelson/nelson/assets/images/elysia.ico" type="img/x-icon" rel="shortcut icon">
     <!-- All css files are included here. -->
     <link rel="stylesheet" href="htmldemo.net/nelson/nelson/assets/css/vendor/bootstrap.min.css">
     <link rel="stylesheet" href="htmldemo.net/nelson/nelson/assets/css/vendor/iconfont.min.css">
@@ -34,8 +40,8 @@
                     <div class="row align-items-center">
                         <div class="col-xl-1 col-lg-1 col-md-4 col-12">
                             <!--Logo Area Start-->
-                            <div class="logo-area">
-                                <a href="index.html"><img src="assets/images/logo.png" alt=""></a>
+                            <div class="logo-area" style="margin-left: 20%;">
+                                <a href="index.PHP"><img src="assets/images/elysia.png" style="height: 70px; width: auto;" alt=""></a>
                             </div>
                             <!--Logo Area End-->
                         </div>
@@ -44,17 +50,9 @@
                             <div class="header-menu-area text-center">
                                 <nav class="main-menu">
                                     <ul>
-                                        <li><a href="index.html">Home</a>
-                                            
-                                        </li>
-                                        <li><a href="shop.php">Shop</a>
-                                            
-                                        </li>
-        
-                                        <li><a href="blog.html">About Us</a>
-                                            
-                                        </li>
-                                        <li><a href="htmldemo.net/nelson/nelson/contact.html">Contact</a></li>
+                                        <?php 
+                                        ShowMenu();
+                                        ?>
                                     </ul>
                                 </nav>
                             </div>
@@ -135,10 +133,12 @@
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
-                                    <form class="d-flex" role="search">
-                                        <input name="search" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                    <form class="d-flex" >
+                                        <input name="cateBrand" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                                         <button class="btn btn-outline-success" type="submit" value="insert" name="insert">Search</button>
+                                        
                                       </form>
+                                     
                                 </div>
                                 
 
@@ -165,9 +165,9 @@
                             <div class="header-mobile-navigation d-block d-lg-none">
                                 <div class="row align-items-center">
                                     <div class="col-6 col-md-6">
-                                        <div class="header-logo">
+                                        <div class="" style="padding-right: 10px;">
                                             <a href="index.html">
-                                                <img src="assets/images/logo.png" class="img-fluid" alt="">
+                                                <img src="assets/images/elysia.png" style="width: 68px; height: auto;"  class="img-fluid" alt="">
                                             </a>
                                         </div>
                                     </div>

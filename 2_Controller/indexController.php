@@ -1,6 +1,6 @@
 <?PHP
 
-include './3_Service/indexService.php';
+require_once './3_Service/indexService.php';
 
 function hienThiDanhMucSanPham(){
     
@@ -16,7 +16,7 @@ function hienThiDanhMucSanPham(){
                 <div class="row">
                     <div class="col">
                         <div class="section-title text-center mb-15">
-                            <h2>'.$cate['name'].'</h2>
+                            <h2> <a href="shop.php?cateBrand='.$cate['name'].'">'.$cate['name'].' </a>  </h2>
                         </div>
                         
                     </div>
@@ -48,36 +48,36 @@ function hienThiSanPham_as_string($id){
     $products = service_getProductByCategoryId($id);
     $html = '';
     foreach($products as $row){
-        $html = $html . '
-            <div class="col-lg-3 col-md-4 col-sm-6">
-            <!--  Single Grid product Start -->
-            <div class="single-grid-product mb-40">
-                <div class="product-image">
-                    <div class="product-label">
-                        <span>-20%</span>
-                    </div>
-                    <a href="single-product.php">
-                        <img src="'. $row["picture"].'" class="img-fluid" alt="">
-                    
-                    </a>
-    
-                    <div class="product-action">
-                        <ul>
-                            <li><a href="cart.html"><i class="fa fa-cart-plus"></i></a></li>
-                            
-                            <li><a href="wishlit.html"><i class="fa fa-heart-o"></i></a></li>
-                        </ul>
-                    </div>
+        $html = $html .  '
+        <div class="col-lg-4 col-md-6 col-sm-6">
+        <!--  Single Grid product Start -->
+        <div class="single-grid-product mb-40">
+            <div class="product-image">
+                <div class="product-label">
+                    <span>-20%</span>
                 </div>
-                <div class="product-content">
-                    <h3 class="title"> <a href="single-product.html"> '. $row["name"].' </a></h3>
-                    <p class="product-price"><span class="discounted-price">'. $row["price"].'$ -</span> <span class="main-price discounted">'. $row["price"].'$</span></p>
+                <a href="singleProduct.php?ProductId='.$row['id'].'">
+                    <img src="'. $row["picture"].'" class="img-fluid" alt="">
+                
+                </a>
+
+                <div class="product-action">
+                    <ul>
+                        <li><a href="cart.html"><i class="fa fa-cart-plus"></i></a></li>
+                        
+                        <li><a href="wishlit.html"><i class="fa fa-heart-o"></i></a></li>
+                    </ul>
                 </div>
             </div>
-            <!--  Single Grid product End -->
+              <div class="product-content">
+              <h3 class="title"> <a href="singleProduct.php"> '. $row["name"].' </a></h3>
+                <p class="product-price"><span class="discounted-price">'. $row["price"].'$ -</span> <span class="main-price discounted">'. $row["price"].'$</span></p>
             </div>
-    
-            ';
+        </div>
+        <!--  Single Grid product End -->
+        <!--  Single Grid product End -->
+    </div>
+    ';
     }
     return $html;
 }

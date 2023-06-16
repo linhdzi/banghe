@@ -1,6 +1,6 @@
 <?php
-include 'layouts/header.php';
-include './2_Controller/shopController.php';
+require_once 'layouts/header.php';
+require_once './2_Controller/shopController.php';
                                                                 
 
 ?>
@@ -33,7 +33,7 @@ include './2_Controller/shopController.php';
                         <div class="page-banner text-start">
                             <h2>Shop</h2>
                             <ul class="page-breadcrumb">
-                                <li><a href="index.html">Home</a></li>
+                                <li><a href="index.php">Home</a></li>
                                 <li>Shop</li>
                             </ul>
                         </div>
@@ -60,7 +60,7 @@ include './2_Controller/shopController.php';
                                     <div class="common-sidebar-widget">
                                         <h3 class="sidebar-title">Product Brand</h3>
                                         <ul class="sidebar-list">
-                                            <li><a href="#"><i class="fa fa-plus"></i>Accessories <span class="count">(14)</span></a></li>
+                                            
                                             <?php  
                                             hienThiDanhMucSanPham();
                                             ?>
@@ -97,37 +97,11 @@ include './2_Controller/shopController.php';
                                                     <div id="grid" class="tab-pane fade active show">
                                                         <div class="product-grid-view">
                                                             <div class="row">
-                                                                <div class="col-lg-4 col-md-6 col-sm-6">
-                                                                    <!--  Single Grid product Start -->
-                                                                    <div class="single-grid-product mb-40">
-                                                                        <div class="product-image">
-                                                                            <div class="product-label">
-                                                                                <span>-20%</span>
-                                                                            </div>
-                                                                            <a href="single-product.html">
-                                                                                <img src="assets/images/product/product-1.jpg" class="img-fluid" alt="">
-                                                                                <img src="assets/images/product/product-2.jpg" class="img-fluid" alt="">
-                                                                            </a>
-
-                                                                            <div class="product-action">
-                                                                                <ul>
-                                                                                    <li><a href="cart.html"><i class="fa fa-cart-plus"></i></a></li>
-                                                                                    <li><a href="#quick-view-modal-container" data-bs-toggle="modal" title="Quick View"><i class="fa fa-eye"></i></a></li>
-                                                                                    <li><a href="wishlit.html"><i class="fa fa-heart-o"></i></a></li>
-                                                                                </ul>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="product-content">
-                                                                            <h3 class="title"> <a href="single-product.html">Stylish Design Chair</a></h3>
-                                                                            <p class="product-price"><span class="discounted-price">$190.00</span> <span class="main-price discounted">$230.00</span></p>
-                                                                        </div>
-                                                                    </div>
-                                                                    <!--  Single Grid product End -->
-                                                                </div>
+                                                                
 
                                                                 <?php
                                                                  
-                                                                 hienthiTheobrand($cate["id"]);
+                                                                 hienthiTheobrand();
                                                                 ?>
 
                                                         </div>

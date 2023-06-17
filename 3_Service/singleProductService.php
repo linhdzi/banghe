@@ -8,7 +8,11 @@ function service_getProductsById($id){
     return $result;
 }
 
-
+function service_showRelatedProducts($productId){
+    $result =database_showRelatedProducts($productId);
+    // var_dump($result);
+    return $result;
+}
 
 
 ?>

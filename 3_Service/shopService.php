@@ -2,10 +2,6 @@
 require_once './4_DataBase/shopDataBase.php';
 
 
-function service_getAllProducts(){
-    $result = database_getAllproducts();
-    return $result;
-}
 
 function service_getAllCategory(){
     $result = database_getAllCategory();

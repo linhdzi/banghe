@@ -23,6 +23,8 @@ function database_getAllCategory()
     // Tạo truy vấn SQL
     $sql = "select * from categories";
 
+    
+
 
     // Thực thi truy vấn SQL và lấy kết quả
     $result = execute_query($sql);

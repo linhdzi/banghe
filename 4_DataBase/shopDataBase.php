@@ -19,14 +19,23 @@ function execute_query($query)
 function database_getProductByCategoryBrand($Brand)
 {
     // Tạo truy vấn SQL
-        $sql = "SELECT products.name , products.picture , products.price,products.id
-        FROM products 
-        JOIN category_products ON products.id = category_products.product_id
-        JOIN categories ON category_products.category_id = categories.id
-        where categories.name = '" . $Brand . "';
+        $sql = '';
+        if($Brand == null){
+            $sql = "SELECT products.name , products.picture , products.price,products.id
+            FROM products 
+            JOIN category_products ON products.id = category_products.product_id
+            JOIN categories ON category_products.category_id = categories.id";
+        }
+        else{
+            $sql = "SELECT products.name , products.picture , products.price,products.id
+            FROM products 
+            JOIN category_products ON products.id = category_products.product_id
+            JOIN categories ON category_products.category_id = categories.id
+            where categories.name = '" . $Brand . "';
+            ";
 
-        ";
-
+        }
+        
     // Thực thi truy vấn SQL và lấy kết quả
     $result = execute_query($sql);
 
@@ -47,7 +56,13 @@ function database_getProductByCategoryBrand($Brand)
 
 function database_getAllCategory(){
     // Tạo truy vấn SQL
-    $sql = "SELECT * FROM categories";
+    // $sql = "SELECT * FROM categories";
+    $sql = "
+        select c.name, c.id, c.parentID, count(1) as totalProduct
+        from categories as c
+        join category_products as cp on c.id = cp.category_id 
+        group by c.name, c.id, c.parentID
+    ";
 
     // Thực thi truy vấn SQL và lấy kết quả
     $result = execute_query($sql);
@@ -93,8 +108,3 @@ function database_getNumberofproduct($Brand){
     }
     return $data;
 }
-
-
-
-
-?>

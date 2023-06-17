@@ -41,13 +41,131 @@ require_once './2_Controller/singleProductController.php';
             </div>
         </div>
         <!-- Page Banner Section End -->
-        <?php
+       <!-- Single Product Section Start -->
+       <div class="single-product-section section pt-60 pt-lg-40 pt-md-30 pt-sm-20 pt-xs-25 pb-100 pb-lg-80 pb-md-70 pb-sm-30 pb-xs-20">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="shop-area">
+                            <div class="row">
+
+
+
+                                <div class="col-md-6 pr-35 pr-lg-15 pr-md-15 pr-sm-15 pr-xs-15">
+                                    <!-- Product Details Left -->
+                                    <div class="product-details-left">
+                                        <div class="product-details-images">
+                                            <?php 
+                                                renderKhoiSlideTo();
+                                            ?>
+                                        </div>
+                                        <div class="product-details-thumbs">
+                                            <?php 
+                                                renderKhoiSlideThumb();
+                                            ?>
+                                        </div>
+                                    </div>
+                                    <!--Product Details Left -->
+                                </div>
+                                <div class="col-md-6">
+                                    <!--Product Details Content Start-->
+                                    <div class="product-details-content">
+                                        
+                                        <h2><?php echo($ProductDetail['name']) ?></h2>
+                                        <div class="single-product-reviews">
+                                            <i class="fa fa-star active"></i>
+                                            <i class="fa fa-star active"></i>
+                                            <i class="fa fa-star active"></i>
+                                            <i class="fa fa-star active"></i>
+                                            <i class="fa fa-star-o"></i>
+                                            
+                                        </div>
+                                        <div class="single-product-price">
+                                            
+                                            <span class=""><p>$<?php
+                                            showPrice();
+                                            
+                                            ?></p></span>
+                                        </div>
+                                        <div class="product-description">
+                                            <p><?php
+                                            showDescription();
+                                            
+                                            ?></p>
+                                        </div>
+                                        <div class="single-product-quantity">
+                                            <form class="add-quantity" action="#">
+                                                <div class="product-variants">
+                                                    <div class="product-variants-item">
+                                                        <span class="control-label">Size</span>
+                                                        <select name="size">
+                                                            <option value="1">S</option>
+                                                            <option value="2">M</option>
+                                                            <option value="3">X</option>
+                                                            <option value="4">XL</option>
+                                                        </select>
+                                                        <div class="nice-select" tabindex="0"><span class="current">S</span>
+                                                            <ul class="list">
+                                                                <li data-value="1" class="option selected focus">S</li>
+                                                                <li data-value="2" class="option">M</li>
+                                                                <li data-value="3" class="option">X</li>
+                                                                <li data-value="4" class="option">XL</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-variants-item">
+                                                        <span class="control-label">Color</span>
+                                                        <ul class="procuct-color">
+                                                            <li><a href="#"><span class="color"></span></a></li>
+                                                            <li class="active"><a href="#"><span class="color"></span></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="product-quantity">
+                                                    <input value="1" type="number">
+                                                </div>
+                                                <div class="add-to-link">
+                                                    <button class="btn"><i class="fa fa-shopping-bag"></i> add to cart</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="wishlist-compare-btn">
+                                            <a href="#" class="wishlist-btn">Add to Wishlist</a>
+                                            <a href="#" class="add-compare">Compare</a>
+                                        </div>
+                                        <div class="product-meta">
+                                            <span class="posted-in">
+                                                Brand: 
+                                                <a href="#"><?php 
+                                                showid();
+                                                ?></a>,
+                                               
+                                            </span>
+                                        </div>
+                                        <div class="single-product-sharing">
+                                            <h3>Share this product</h3>
+                                            <ul>
+                                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                                <li><a href="./assets/words/Thong so san pham.docx"><i class="fa fa-vimeo"></i></a></li>
+                                                <li><a href="./assets/words/Thong so san pham.docx"><i class="fa fa-download"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!--Product Details Content End-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Single Product Section End -->
+
         
-        hienThiChiTietSP();
-        
-        ?>
-        
-        <!--Product Description Review Section Start-->
 
         <!--Product section start-->
         <div class="product-section section pt-100 pt-lg-80 pt-md-70 pt-sm-60 pt-xs-50 pb-55 pb-lg-35 pb-md-25 pb-sm-15 pb-xs-5">
@@ -61,142 +179,16 @@ require_once './2_Controller/singleProductController.php';
                     </div>
                 </div>
                 <div class="row product-slider">
-                    <div class="col">
-                        <!--  Single Grid product Start -->
-                        <div class="single-grid-product mb-40">
-                            <div class="product-image">
-                                <div class="product-label">
-                                    <span>-20%</span>
-                                </div>
-                                <a href="single-product.html">
-                                    <img src="assets/images/product/product-1.jpg" class="img-fluid" alt="">
-                                    <img src="assets/images/product/product-2.jpg" class="img-fluid" alt="">
-                                </a>
+                    
 
-                                <div class="product-action">
-                                    <ul>
-                                        <li><a href="cart.html"><i class="fa fa-cart-plus"></i></a></li>
-                                        <li><a href="#quick-view-modal-container" data-bs-toggle="modal" title="Quick View"><i class="fa fa-eye"></i></a></li>
-                                        <li><a href="wishlit.html"><i class="fa fa-heart-o"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="product-content">
-                                <h3 class="title"> <a href="single-product.html">Stylish Design Chair</a></h3>
-                                <p class="product-price"><span class="discounted-price">$190.00</span> <span class="main-price discounted">$230.00</span></p>
-                            </div>
-                        </div>
-                        <!--  Single Grid product End -->
-                    </div>
+                    
+                    
 
-                    <div class="col">
-                        <!--  Single Grid product Start -->
-                        <div class="single-grid-product mb-40">
-                            <div class="product-image">
-                                <div class="product-label">
-                                    <span>-20%</span>
-                                </div>
-                                <a href="single-product.html">
-                                    <img src="assets/images/product/product-2.jpg" class="img-fluid" alt="">
-                                    <img src="assets/images/product/product-3.jpg" class="img-fluid" alt="">
-                                </a>
+                    <?php
+                    ShowRelatedProducts();
+                    ?>
 
-                                <div class="product-action">
-                                    <ul>
-                                        <li><a href="cart.html"><i class="fa fa-cart-plus"></i></a></li>
-                                        <li><a href="#quick-view-modal-container" data-bs-toggle="modal" title="Quick View"><i class="fa fa-eye"></i></a></li>
-                                        <li><a href="wishlit.html"><i class="fa fa-heart-o"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="product-content">
-                                <h3 class="title"> <a href="single-product.html">Miro Dining Table</a></h3>
-                                <p class="product-price"><span class="discounted-price">$113.00</span> <span class="main-price discounted">$180.00</span></p>
-                            </div>
-                        </div>
-                        <!--  Single Grid product End -->
-                    </div>
-
-                    <div class="col">
-                        <!--  Single Grid product Start -->
-                        <div class="single-grid-product mb-40">
-                            <div class="product-image">
-                                <div class="product-label">
-                                    <span>-20%</span>
-                                </div>
-                                <a href="single-product.html">
-                                    <img src="assets/images/product/product-4.jpg" class="img-fluid" alt="">
-                                    <img src="assets/images/product/product-1.jpg" class="img-fluid" alt="">
-                                </a>
-
-                                <div class="product-action">
-                                    <ul>
-                                        <li><a href="cart.html"><i class="fa fa-cart-plus"></i></a></li>
-                                        <li><a href="#quick-view-modal-container" data-bs-toggle="modal" title="Quick View"><i class="fa fa-eye"></i></a></li>
-                                        <li><a href="wishlit.html"><i class="fa fa-heart-o"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="product-content">
-                                <h3 class="title"> <a href="single-product.html">Janus Table Lamp</a></h3>
-                                <p class="product-price"><span class="discounted-price">$86.00</span> <span class="main-price discounted">$150.00</span></p>
-                            </div>
-                        </div>
-                        <!--  Single Grid product End -->
-                    </div>
-
-                    <div class="col">
-                        <!--  Single Grid product Start -->
-                        <div class="single-grid-product mb-40">
-                            <div class="product-image">
-                                <a href="single-product.html">
-                                    <img src="assets/images/product/product-3.jpg" class="img-fluid" alt="">
-                                </a>
-
-                                <div class="product-action">
-                                    <ul>
-                                        <li><a href="cart.html"><i class="fa fa-cart-plus"></i></a></li>
-                                        <li><a href="#quick-view-modal-container" data-bs-toggle="modal" title="Quick View"><i class="fa fa-eye"></i></a></li>
-                                        <li><a href="wishlit.html"><i class="fa fa-heart-o"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="product-content">
-                                <h3 class="title"> <a href="single-product.html">Discus Floor and Table</a></h3>
-                                <p class="product-price"><span class="discounted-price">$290.00</span> <span class="main-price discounted">$330.00</span></p>
-                            </div>
-                        </div>
-                        <!--  Single Grid product End -->
-                    </div>
-
-                    <div class="col">
-                        <!--  Single Grid product Start -->
-                        <div class="single-grid-product mb-40">
-                            <div class="product-image">
-                                <div class="product-label">
-                                    <span class="sale">Sale</span>
-                                </div>
-                                <a href="single-product.html">
-                                    <img src="assets/images/product/product-5.jpg" class="img-fluid" alt="">
-                                    <img src="assets/images/product/product-2.jpg" class="img-fluid" alt="">
-                                </a>
-
-                                <div class="product-action">
-                                    <ul>
-                                        <li><a href="cart.html"><i class="fa fa-cart-plus"></i></a></li>
-                                        <li><a href="#quick-view-modal-container" data-bs-toggle="modal" title="Quick View"><i class="fa fa-eye"></i></a></li>
-                                        <li><a href="wishlit.html"><i class="fa fa-heart-o"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="product-content">
-                                <h3 class="title"> <a href="single-product.html">Sled Mini Sideboard</a></h3>
-                                <p class="product-price"><span class="discounted-price">$90.00</span></p>
-                            </div>
-                        </div>
-                        <!--  Single Grid product End -->
-                    </div>
-
+                    
                     <div class="col">
                         <!--  Single Grid product Start -->
                         <div class="single-grid-product mb-40">
@@ -542,12 +534,7 @@ require_once './2_Controller/singleProductController.php';
                                 <div class="col-lg-8 col-md-6">
                                     <!--Product Details Content Start-->
                                     <div class="product-details-content">
-                                        <!--Product Nav Start-->
-                                        <div class="product-nav">
-                                            <a href="#"><i class="fa fa-angle-left"></i></a>
-                                            <a href="#"><i class="fa fa-angle-right"></i></a>
-                                        </div>
-                                        <!--Product Nav End-->
+                                        
                                         <h2>Aliquam lobortis est turpis mauris egestas eget</h2>
                                         <div class="single-product-reviews">
                                             <i class="fa fa-star active"></i>

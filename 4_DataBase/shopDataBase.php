@@ -42,7 +42,7 @@ function database_getProductByCategoryBrand($Brand)
         FROM products 
         JOIN category_products ON products.id = category_products.product_id
         JOIN categories ON category_products.category_id = categories.id
-        where categories.id = '" . $Brand . "';
+        where categories.name like '" . $Brand . "';
 
         ";
 

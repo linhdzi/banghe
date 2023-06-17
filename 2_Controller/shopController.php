@@ -54,8 +54,8 @@ include './3_Service/shopService.php';
        
         
     
-    
-
+    $getProductById = $GET_["danhMucId"];
+    $getcategotiesByName = service_getProductByCategoryBrand($getProductById);
 
     
 function hienThiDanhMucSanPham(){
@@ -66,7 +66,7 @@ function hienThiDanhMucSanPham(){
         $numberOfProducts = service_getNumProducts($cate['id']);
         if(count($numberOfProducts) > 0){
             $html = $html . '
-            <li><a href=""><i class="fa fa-plus"></i>'.$cate["id"].' <span class="count"></span></a></li>
+            <li><a href="/bangghe/shop.php"><i class="fa fa-plus"></i>'.$cate["name"].' <span class="count"></span></a></li>
                             
         ';
         
@@ -78,8 +78,9 @@ function hienThiDanhMucSanPham(){
 
 }
 
-function hienthiTheobrand($Brand){
-    $products = service_getProductByCategoryBrand($Brand);
+function hienthiTheobrand(){
+     global $getProductById;
+    $products = service_getProductByCategoryBrand($getProductById);
     $html = '';
     foreach($products as $row){
         $html = $html . '
@@ -113,6 +114,6 @@ function hienthiTheobrand($Brand){
     </div>
     ';
     }
-    return $html;
+    echo $html;
 }
 

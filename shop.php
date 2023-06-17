@@ -9,6 +9,7 @@ include './2_Controller/shopController.php';
             <div class="sidebar-search-icon">
                 <button class="search-close"><i class="fa fa-times"></i></button>
             </div>
+            
             <div class="sidebar-search-input">
                 <form action="#">
                     <div class="form-search">
@@ -126,8 +127,7 @@ include './2_Controller/shopController.php';
                                                                 </div>
 
                                                                 <?php
-                                                                 
-                                                                 hienthiTheobrand($cate["id"]);
+                                                                 hienthiTheobrand("Nike");
                                                                 ?>
 
                                                         </div>
@@ -135,6 +135,7 @@ include './2_Controller/shopController.php';
                                                 </div>
                                             </div>
                                         </div>
+                                        
                                     </div>
                                     <div class="row mb-30 mb-sm-40 mb-xs-30">
                                         <div class="col">

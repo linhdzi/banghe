@@ -21,6 +21,7 @@ function service_getNumProducts($id){
 
 function service_getProductByCategoryBrand($Brand){
     $result = database_getProductByCategoryBrand($Brand);
+    // var_dump($result);
     return $result;
 }
 

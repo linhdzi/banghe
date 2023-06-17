@@ -1,6 +1,5 @@
 <?php
-include './4_DataBase/indexDataBase.php';
-
+require_once './4_DataBase/indexDataBase.php';
 
 function service_getProductByCategoryId($id){
     $result = database_getProductByCategoryId($id);

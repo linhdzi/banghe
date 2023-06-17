@@ -1,7 +1,7 @@
 <?php
-include 'layouts/header.php';
+require_once 'layouts/header.php';
 // sua cai nay
-include './2_Controller/indexController.php';
+require_once './2_Controller/indexController.php';
 
 ?>
         <!--slider section start-->
@@ -54,45 +54,7 @@ include './2_Controller/indexController.php';
         </div>
         <!--slider section end-->
 
-        <!-- Banner section start -->
-        <div class="banner-section section pt-30">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-12">
-                        <!-- Single Banner Start -->
-                        <div class="single-banner-item mb-30">
-                            <div class="banner-image">
-                                <a href="shop.html">
-                                    <img src="htmldemo.net/nelson/nelson/assets/images/banner/banner1.jpg" alt="">
-                                </a>
-                            </div>
-                            <div class="banner-content">
-                                <h3 class="title">OFFICE <br> FURNITURE</h3>
-                                    <a href="htmldemo.net/nelson/nelson/shop.html">SHOP NOW</a>
-                            </div>
-                        </div>
-                        <!-- Single Banner End -->
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12">
-                        <!-- Single Banner Start -->
-                        <div class="single-banner-item mb-30">
-                            <div class="banner-image">
-                                <a href="shop-left-sidebar.html">
-                                    <img src="htmldemo.net/nelson/nelson/assets/images/banner/banner2.jpg" alt="">
-                                </a>
-                            </div>
-                            <div class="banner-content ">
-                                <h3 class="title">HOME <br> FURNITURE</h3>
-                                    <a href="htmldemo.net/nelson/nelson/shop.html">SHOP NOW</a>
-                            </div>
-                        </div>
-                        <!-- Single Banner End -->
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Banner section End -->
-
+    
 
         <?php 
             hienThiDanhMucSanPham();

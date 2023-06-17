@@ -1,7 +1,5 @@
 <?php
-include './4_DataBase/shopDataBase.php';
-
-
+require_once './4_DataBase/shopDataBase.php';
 
 
 function service_getAllProducts(){
@@ -13,8 +11,9 @@ function service_getAllCategory(){
     $result = database_getAllCategory();
     return $result;
 }
-function service_getNumProducts($id){
-    $result=database_getNumberofproduct($id);
+function service_getNumProducts($Brand){
+    $result=database_getNumberofproduct($Brand);
+   
     return $result;
 }
 
@@ -24,5 +23,7 @@ function service_getProductByCategoryBrand($Brand){
     // var_dump($result);
     return $result;
 }
+
+
 
 ?>

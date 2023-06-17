@@ -30,7 +30,7 @@ include 'layouts/header.php';
                         <div class="page-banner text-start">
                             <h2>Contact</h2>
                             <ul class="page-breadcrumb">
-                                <li><a href="index.html">Home</a></li>
+                                <li><a href="index.php">Home</a></li>
                                 <li>Contact</li>
                             </ul>
                         </div>

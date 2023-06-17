@@ -73,11 +73,7 @@ function hienThiDanhMucSanPham(){
     $numberOfProducts = service_getNumProducts($cate['id']);
         if(count($numberOfProducts) > 0){
             $html = $html . '
-<<<<<<< HEAD
-            <li><a href="/bangghe/shop.php"><i class="fa fa-plus"></i>'.$cate["name"].' <span class="count"></span></a></li>
-=======
             <li><a href="shop.php?cateBrand='.$cate['name'].'"><i class="fa fa-plus"></i>'.$cate["name"].' <span class="count"></span></a></li>
->>>>>>> 485ea429732a35a96fd997b6b0d605acc581f285
                             
         ';
         
@@ -89,11 +85,6 @@ function hienThiDanhMucSanPham(){
 
 }
 
-<<<<<<< HEAD
-function hienthiTheobrand(){
-     global $getProductById;
-    $products = service_getProductByCategoryBrand($getProductById);
-=======
 
 
 
@@ -103,7 +94,6 @@ function hienthiTheobrand(){
     global $Brand;
     $products = null;
     $products = service_getProductByCategoryBrand($Brand);
->>>>>>> 485ea429732a35a96fd997b6b0d605acc581f285
     $html = '';
     foreach($products as $row){
         $html = $html . '

@@ -101,12 +101,8 @@ require_once './2_Controller/shopController.php';
                                                                 
 
                                                                 <?php
-<<<<<<< HEAD
-                                                                 hienthiTheobrand("Nike");
-=======
                                                                  
                                                                  hienthiTheobrand();
->>>>>>> 485ea429732a35a96fd997b6b0d605acc581f285
                                                                 ?>
 
                                                         </div>

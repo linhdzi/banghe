@@ -58,10 +58,10 @@ function database_getAllCategory(){
     // Tạo truy vấn SQL
     // $sql = "SELECT * FROM categories";
     $sql = "
-        select c.name, c.id, c.parentID, count(1) as totalProduct
+        select c.name,count(1) as totalProduct
         from categories as c
         join category_products as cp on c.id = cp.category_id 
-        group by c.name, c.id, c.parentID
+        group by c.name
     ";
 
     // Thực thi truy vấn SQL và lấy kết quả
@@ -82,29 +82,3 @@ function database_getAllCategory(){
     return $data;
 }
 
-function database_getNumberofproduct($Brand){
-    // Tạo truy vấn SQL
-    $sql = "SELECT count(*)
-    FROM products 
-    JOIN category_products ON products.id = category_products.product_id
-    JOIN categories ON category_products.category_id = categories.id
-    where categories.name = '" . $Brand. "';
-
-    ";
-    // Thực thi truy vấn SQL và lấy kết quả
-    $result = execute_query($sql);
-
-    // Kiểm tra kết quả truy vấn
-    $data = [];
-    if (mysqli_num_rows($result) > 0) {
-        // Hiển thị dữ liệu
-        while ($row = mysqli_fetch_assoc($result)) {
-            array_push($data, $row);
-        }
-        
-    } else {
-        echo "<script>console.log('Không tìm thấy sản phẩm nào thuoc id ')</script>";
-        
-    }
-    return $data;
-}

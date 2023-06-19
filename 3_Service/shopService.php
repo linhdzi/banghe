@@ -7,11 +7,6 @@ function service_getAllCategory(){
     $result = database_getAllCategory();
     return $result;
 }
-function service_getNumProducts($Brand){
-    $result=database_getNumberofproduct($Brand);
-   
-    return $result;
-}
 
 
 function service_getProductByCategoryBrand($Brand){

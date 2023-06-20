@@ -19,6 +19,7 @@
 </head>
 <body>
     <div id="main-wrapper">
+        <div class="container">
         <!--Header section start-->
         <header class="header header-transparent header-sticky  d-lg-block d-none">
             <div class="header-deafult-area">
@@ -43,14 +44,44 @@
                                             <a href="#">About</a>
                                                 <ul class="sub-menu">
                                                     <li><a href="about.php">About Us</a></li>
-                                                    <li><a href="Privacy_Policy.php">Privacy Policy</a></li>
+                                                    <li><a href="privacy-policy.php">Privacy Policy</a></li>
                                                 </ul>
                                         </li>
                                         <li>    
                                             <a href="shop.php">Shop</a>
-                                        </li>
+                                            <ul class="mega-menu three-column left-0">
+                                                <li><a href="#" class="item-link">Material</a>
+                                                    <ul>
+                                                        <li><a href="#">Wood</a></li>
+                                                        <li><a href="#">Metal</a></li>
+                                                        <li><a href="#">Leather</a></li>
+                                                        <li><a href="#">Fabric</a></li>
+                                                        <li><a href="#">Plastic</a></li>
+                                                        <li><a href="#">Cotton</a></li>
+                                                    </ul>
+                                                    </li>
+                                                <li><a href="#" class="item-link">Place</a>
+                                                    <ul>
+                                                        <li><a href="#">Indoor</a></li>
+                                                        <li><a href="#">Outdoor</a></li>
+                                                        <li><a href="#">Office</a></li>
+                                                        <li><a href="#">School</a></li>
+                                                        <li><a href="#">Restaurant </a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="#" class="item-link">Brand</a>
+                                                    <ul>
+                                                        <li><a href="#">Indoor</a></li>
+                                                        <li><a href="#">Outdoor</a></li>
+                                                        <li><a href="#">Office</a></li>
+                                                        <li><a href="#">School</a></li>
+                                                        <li><a href="#">Restaurant </a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                            </li>
                                         <li>
-                                            <a href="contact.php">Contact</a></li>
+                                            <a href="contact.php">Contact Us</a></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -111,7 +142,7 @@
                                                         </li>
                                                     </ul>
                                                     <div class="cart-total">
-                                                        <h5>Subtotal :<span class="float-right">$39.79</span></h5>
+                                                        <h5>Subtotal :<span class="float-right"></span></h5>
                                                         <h5>Eco Tax (-2.00) :<span class="float-right">$7.00</span></h5>
                                                         <h5>VAT (20%) : <span class="float-right">$0.00</span></h5>
                                                         <h5>Total : <span class="float-right">$46.79</span></h5>
@@ -132,14 +163,7 @@
                                         <button class="btn btn-outline-success" type="submit">Search</button>
                                       </form>
                                 </div>
-                                
-
-                                <div class="col-sm-1"></div>
                               </div>
-
-
-
-                           
                             <!--Header Search And Mini Cart Area End-->
                         </div>
                     </div>
@@ -214,11 +238,8 @@
                     </div>
                     <nav class="offcanvas-navigation">
                         <ul>
-                            <li class="menu-item-has-children"><a href="#">Home</a>
-                                <ul class="submenu2">
-                                    <li><a href="index.html">Home 01</a></li>
-                                    <li><a href="index-2.html">Home 02</a></li>
-                                </ul>
+                            <li class="menu-item-has-children">
+                                <a href="index.php">Home</a>
                             </li>
                             <li class="menu-item-has-children"><a href="#">Shop</a>
                                 <ul class="submenu2">
@@ -340,4 +361,16 @@
                 <p class="form-description">Hit enter to search or ESC to close</p>
             </div>
         </div>
-        <!-- main-search start -->
+    </div>
+    </div>
+    <!-- Placed js at the end of the document so the pages load faster -->
+
+    <!-- All jquery file included here -->
+    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="https://maps.google.com/maps/api/js?sensor=false&amp;libraries=geometry&amp;v=3.22&amp;key=AIzaSyDAq7MrCR1A2qIShmjbtLHSKjcEIEBEEwM"></script>
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+    <script src="assets/js/plugins/plugins.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>

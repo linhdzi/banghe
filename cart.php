@@ -109,20 +109,8 @@ include 'layouts/header.php';
                                         </div>
                                     </form>
                                 </div>
-                                <!-- Discount Coupon -->
-                                <div class="discount-coupon">
-                                    <h4>Discount Coupon Code</h4>
-                                    <form action="#">
-                                        <div class="row">
-                                            <div class="col-md-6 col-12 mb-25">
-                                                <input type="text" placeholder="Coupon Code">
-                                            </div>
-                                            <div class="col-md-6 col-12 mb-25">
-                                                <button class="btn">Apply Code</button>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
+                               89 <!-- Discount Coupon -->
+                                
                             </div>
 
                             <!-- Cart Summary -->
@@ -149,20 +137,6 @@ include 'layouts/header.php';
             </div>
         </div>
         <!--Cart section end-->
-        
-                            <!-- mailchimp-alerts Start -->
-                            <div class="mailchimp-alerts">
-                                <div class="mailchimp-submitting"></div><!-- mailchimp-submitting end -->
-                                <div class="mailchimp-success"></div><!-- mailchimp-success end -->
-                                <div class="mailchimp-error"></div><!-- mailchimp-error end -->
-                            </div>
-                            <!-- mailchimp-alerts end -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Newsletter Section End -->
         <?php
 include 'layouts/footer.php';
 ?>   

@@ -1,19 +1,19 @@
 <?php
 include 'layouts/header.php';
 ?>
-<!-- Page Banner Section Start -->
-<div class="page-banner-section section bg-image" data-bg="assets/images/bg/breadcrumb.png">
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <div class="page-banner text-start">
-                    <h2>Contact Us</h2>
-                        <ul class="page-breadcrumb">
-                            <li>
-                                <a href="index.html">Home</a>
-                            </li>
+<!--Page Banner Section Start -->
+        <div class="page-banner-section section bg-image" data-bg="assets/images/bg/breadcrumb.png">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="page-banner text-start">
+                            <h2>Contact Us</h2>
+                            <ul class="page-breadcrumb">
+                                <li><a href="index.php">Home</a></li>
                                 <li>Contact Us</li>
-                        </ul>
+                            </ul>
+                        </div>
+
                     </div>
                 </div>
             </div>

@@ -1,3 +1,8 @@
+<?php
+require_once './2_Controller/headerController.php';
+
+?>
+
 <!doctype html>
 <html class="no-js" lang="zxx">
 <head>
@@ -6,8 +11,11 @@
     <title>Richfield Chairs</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <link rel="icon" href="assets/images/elysia.png"  type="image/x-icon">
+
     <!-- Place favicon.ico in the root directory -->
-    <link href="./assets/images/favicon.ico" type="img/x-icon" rel="shortcut icon">
+    <link href="htmldemo.net/nelson/nelson/assets/images/elysia.ico" type="img/x-icon" rel="shortcut icon">
     <!-- All css files are included here. -->
     <link rel="stylesheet" href="./assets/css/vendor/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/vendor/iconfont.min.css">
@@ -27,8 +35,8 @@
                     <div class="row align-items-center">
                         <div class="col-xl-1 col-lg-1 col-md-4 col-12">
                             <!--Logo Area Start-->
-                            <div class="logo-area">
-                                <a href="index.php"><img src="assets/images/logo.png" alt=""></a>
+                            <div class="logo-area" style="margin-left: 20%;">
+                                <a href="index.PHP"><img src="assets/images/elysia.png" style="height: 70px; width: auto;" alt=""></a>
                             </div>
                             <!--Logo Area End-->
                         </div>
@@ -37,51 +45,9 @@
                             <div class="header-menu-area text-center">
                                 <nav class="main-menu">
                                     <ul>
-                                        <li>
-                                            <a href="index.php">Home</a>   
-                                        </li>
-                                        <li>
-                                            <a href="#">About</a>
-                                                <ul class="sub-menu">
-                                                    <li><a href="about.php">About Us</a></li>
-                                                    <li><a href="privacy-policy.php">Privacy Policy</a></li>
-                                                </ul>
-                                        </li>
-                                        <li>    
-                                            <a href="shop.php">Shop</a>
-                                            <ul class="mega-menu three-column left-0">
-                                                <li><a href="#" class="item-link">Material</a>
-                                                    <ul>
-                                                        <li><a href="#">Wood</a></li>
-                                                        <li><a href="#">Metal</a></li>
-                                                        <li><a href="#">Leather</a></li>
-                                                        <li><a href="#">Fabric</a></li>
-                                                        <li><a href="#">Plastic</a></li>
-                                                        <li><a href="#">Cotton</a></li>
-                                                    </ul>
-                                                    </li>
-                                                <li><a href="#" class="item-link">Place</a>
-                                                    <ul>
-                                                        <li><a href="#">Indoor</a></li>
-                                                        <li><a href="#">Outdoor</a></li>
-                                                        <li><a href="#">Office</a></li>
-                                                        <li><a href="#">School</a></li>
-                                                        <li><a href="#">Restaurant </a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="#" class="item-link">Brand</a>
-                                                    <ul>
-                                                        <li><a href="#">Indoor</a></li>
-                                                        <li><a href="#">Outdoor</a></li>
-                                                        <li><a href="#">Office</a></li>
-                                                        <li><a href="#">School</a></li>
-                                                        <li><a href="#">Restaurant </a></li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                            </li>
-                                        <li>
-                                            <a href="contact.php">Contact Us</a></li>
+                                        <?php 
+                                        ShowMenu();
+                                        ?>
                                     </ul>
                                 </nav>
                             </div>
@@ -158,10 +124,12 @@
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
-                                    <form class="d-flex" role="search">
-                                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                                        <button class="btn btn-outline-success" type="submit">Search</button>
+                                    <form class="d-flex" >
+                                        <input name="cateBrand" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                        <button class="btn btn-outline-success" type="submit" value="insert" name="insert">Search</button>
+                                        
                                       </form>
+                                     
                                 </div>
                               </div>
                             <!--Header Search And Mini Cart Area End-->

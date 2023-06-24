@@ -70,14 +70,17 @@ function hienthiTheobrand(){
 
                 <div class="product-action">
                     <ul>
-                        <li name="cart"><a href="javascriptvoid:(0)"><i class="fa fa-cart-plus"></i></a></li>
+                    
+                    <li name="cartId='.$row["id"].'"><a href="cart.php?cartId='.$row["id"].'"><i class="fa fa-cart-plus"></i></a></li>   
+                    
                         
-                        <li><a href="wishlit.html"><i class="fa fa-heart-o"></i></a></li>
+                        <li class="Compare-product" product-id ="'. $row["id"].'" ><a href="javascript:void(0)"><i class="fa-solid fa-code-compare" style="color: #000000;"></i></a></li>
+                        <li class="Wishlist-product" product-id ="'. $row["id"].'" ><a href="javascript:void(0)"><i class="fa fa-heart-o"></i></a></li>
                     </ul>
                 </div>
             </div>
               <div class="product-content">
-              <h3 class="title"> <a href="singleProduct.php"> '. $row["name"].' </a></h3>
+              <h3 class="title"> <a href="singleProduct.php?ProductId='.$row['id'].'"> '. $row["name"].' </a></h3>
                 <p class="product-price"><span class="discounted-price">'. $row["price"].'$ -</span> <span class="main-price discounted">'. $row["price"].'$</span></p>
             </div>
         </div>
@@ -88,3 +91,5 @@ function hienthiTheobrand(){
     }
     echo $html;
 }
+?>
+

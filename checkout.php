@@ -95,17 +95,7 @@ include 'layouts/header.php';
                                                 <input type="text" placeholder="Zip Code">
                                             </div>
 
-                                            <div class="col-12 mb-20">
-                                                <div class="check-box">
-                                                    <input type="checkbox" id="create_account">
-                                                    <label for="create_account">Create an Acount?</label>
-                                                </div>
-                                                <div class="check-box">
-                                                    <input type="checkbox" id="shiping_address" data-shipping>
-                                                    <label for="shiping_address">Ship to Different Address</label>
-                                                </div>
-                                            </div>
-
+                                            
                                         </div>
 
                                     </div>
@@ -198,8 +188,8 @@ include 'layouts/header.php';
                                                     <li>Makorone Cicile X 01 <span>$65.00</span></li>
                                                 </ul>
 
-                                                <p>Sub Total <span>$296.00</span></p>
-                                                <p>Shipping Fee <span>$00.00</span></p>
+                                                
+                                                
 
                                                 <h4>Grand Total <span>$296.00</span></h4>
 

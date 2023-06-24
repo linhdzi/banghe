@@ -25,6 +25,8 @@ require_once './2_Controller/headerController.php';
     <link rel="stylesheet" href="htmldemo.net/nelson/nelson/assets/css/vendor/helper.css">
     <link rel="stylesheet" href="htmldemo.net/nelson/nelson/assets/css/plugins/plugins.css">
     <link rel="stylesheet" href="htmldemo.net/nelson/nelson/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Modernizr JS -->
     <script src="htmldemo.net/nelson/nelson/assets/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
@@ -77,7 +79,7 @@ require_once './2_Controller/headerController.php';
                                                             <li><a href="login-register.html">Login</a></li>
                                                             
                                                             <li><a href="my-account.html">My account</a></li>
-                                                            <li><a href="cart.html">Cart</a></li>
+                                                            <li><a href="cart.php">Cart</a></li>
                                                             <li><a href="wishlist.html">Wishlist</a></li>
                                                         </ul>
                                                     </li>
@@ -85,13 +87,13 @@ require_once './2_Controller/headerController.php';
                                                 </ul>
                                                 <!--Crunccy dropdown-->
                                             </li>
-                                            <li class="mini-cart"><a href="htmldemo.net/nelson/nelson/cart.html"><i class="flaticon-shopping-cart"></i> <span class="mini-cart-total">$300.00(2)</span></a>
+                                            <li class="mini-cart"><a href="cart.php"><i class="flaticon-shopping-cart"></i> <span class="mini-cart-total">$300.00(2)</span></a>
                                                 <!--Mini Cart Dropdown Start-->
                                                 <div class="header-cart">
                                                     <ul class="cart-items">
                                                         <li class="single-cart-item">
                                                             <div class="cart-img">
-                                                                <a href="cart.html"><img src="assets/images/cart/cart1.jpg" alt=""></a>
+                                                                <a href="cart.php"><img src="assets/images/cart/cart1.jpg" alt=""></a>
                                                             </div>
                                                             <div class="cart-content">
                                                                 <h5 class="product-name"><a href="single-product.html">Dell Inspiron 24</a></h5>
@@ -117,9 +119,7 @@ require_once './2_Controller/headerController.php';
                                                         </li>
                                                     </ul>
                                                     <div class="cart-total">
-                                                        <h5>Subtotal :<span class="float-right">$39.79</span></h5>
-                                                        <h5>Eco Tax (-2.00) :<span class="float-right">$7.00</span></h5>
-                                                        <h5>VAT (20%) : <span class="float-right">$0.00</span></h5>
+                                                        
                                                         <h5>Total : <span class="float-right">$46.79</span></h5>
                                                     </div>
                                                     <div class="cart-btn">
@@ -134,11 +134,12 @@ require_once './2_Controller/headerController.php';
                                 </div>
                                 <div class="col-sm-6">
                                     <form class="d-flex" >
-                                        <input name="cateBrand" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                                        <button class="btn btn-outline-success" type="submit" value="insert" name="insert">Search</button>
+                                    <input id="Brand" name="cateBrand" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                      <button  id="SearchByCateBrand"  class="btn btn-outline-success" type="submit" value="insert" name="insert">Search</button>
+                                        
                                         
                                       </form>
-                                     
+                                      
                                 </div>
                                 
 
@@ -166,7 +167,7 @@ require_once './2_Controller/headerController.php';
                                 <div class="row align-items-center">
                                     <div class="col-6 col-md-6">
                                         <div class="" style="padding-right: 10px;">
-                                            <a href="index.html">
+                                            <a href="index.php">
                                                 <img src="assets/images/elysia.png" style="width: 68px; height: auto;"  class="img-fluid" alt="">
                                             </a>
                                         </div>
@@ -177,7 +178,7 @@ require_once './2_Controller/headerController.php';
                                                 <ul class="icon-list justify-content-end">
                                                     <li>
                                                         <div class="header-cart-icon">
-                                                            <a href="cart.html"><i class="flaticon-shopping-cart"></i></a>
+                                                            <a href="cart.php"><i class="flaticon-shopping-cart"></i></a>
                                                         </div>
                                                     </li>
                                                     <li>
@@ -222,86 +223,17 @@ require_once './2_Controller/headerController.php';
                     </div>
                     <nav class="offcanvas-navigation">
                         <ul>
-                            <li class="menu-item-has-children"><a href="#">Home</a>
-                                <ul class="submenu2">
-                                    <li><a href="index.html">Home 01</a></li>
-                                    <li><a href="index-2.html">Home 02</a></li>
-                                </ul>
+                            <li class="menu-item-has-children"><a href="index.php">Home</a>
+                                
                             </li>
-                            <li class="menu-item-has-children"><a href="#">Shop</a>
-                                <ul class="submenu2">
-                                    <li class="menu-item-has-children"><a href="#">Pages</a>
-                                        <ul class="submenu2">
-                                            <li><a href="about.html">About</a></li>
-                                            <li><a href="compare.html">Compare</a></li>
-                                            <li><a href="cart.html">Shopping Cart</a></li>
-                                            <li><a href="checkout.html">Checkout</a></li>
-                                            <li><a href="wishlist.html">Wishlist</a></li>
-                                            <li><a href="my-account.html">My Account</a></li>
-                                            <li><a href="login-register.html">Login Register</a></li>
-                                            <li><a href="faq.html">Frequently Questions</a></li>
-                                            <li><a href="404.html">Error 404</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="menu-item-has-children"><a href="#">Shop Layout</a>
-                                        <ul class="submenu2">
-                                            <li><a href="shop.html">Shop</a></li>
-                                            <li><a href="shop-three-column.html">Shop Three Column</a></li>
-                                            <li><a href="shop-four-column.html">Shop Four Column</a></li>
-                                            <li><a href="shop-right-sidebar.html">Shop Right Sidebar</a></li>
-                                            <li><a href="shop-list-nosidebar.html">Shop List No Sidebar</a></li>
-                                            <li><a href="shop-list-left-sidebar.html">Shop List Left Sidebar</a>
-                                            </li>
-                                            <li><a href="shop-list-right-sidebar.html">Shop List Right
-                                                    Sidebar</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="menu-item-has-children"><a href="#">Product Details</a>
-                                        <ul class="submenu2">
-                                            <li><a href="single-product.html">Single Product</a></li>
-                                            <li><a href="single-product-variable.html">Variable Product</a></li>
-                                            <li><a href="single-product-affiliate.html">Affiliate Product</a>
-                                            </li>
-                                            <li><a href="single-product-group.html">Group Product</a></li>
-                                            <li><a href="single-product-tabstyle-2.html">Product Left Tab</a>
-                                            </li>
-                                            <li><a href="single-product-tabstyle-3.html">Product Right Tab</a>
-                                            </li>
-                                            <li><a href="single-product-gallery-left.html">Product Gallery
-                                                    Left</a></li>
-                                            <li><a href="single-product-gallery-right.html">Product Gallery
-                                                    Right</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="menu-item-has-children"><a href="#">Product Details</a>
-                                        <ul class="submenu2">
-                                            <li><a href="single-product-sticky-left.html">Product Sticky
-                                                    Left</a></li>
-                                            <li><a href="single-product-sticky-right.html">Product Sticky
-                                                    Right</a></li>
-                                            <li><a href="single-product-slider-box.html">Product Box Slider</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-
-                                </ul>
+                            <li class="menu-item-has-children"><a href="shop.php">Shop</a>
+                                
                             </li>
-                            <li><a href="shop.html">New Arrivals</a></li>
-                            <li class="menu-item-has-children"><a href="#">Pages</a>
-                                <ul class="submenu2">
-                                    <li><a href="blog.html">Blog</a></li>
-                                    <li><a href="blog-two-column.html">Blog Two Column</a></li>
-                                    <li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
-                                    <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
-                                    <li><a href="blog-details.html">Blog Details</a></li>
-                                    <li><a href="blog-details-gallery.html">Blog Details Gallery</a></li>
-                                    <li><a href="blog-details-audio.html">Blog Details Audio</a></li>
-                                    <li><a href="blog-details-video.html">Blog Details Video</a></li>
-                                </ul>
+                            
+                            <li class="menu-item-has-children"><a href="contact.php">Contact</a>
                             </li>
-                            <li class="menu-item-has-children"><a href="contact.html">Contact</a>
+                            <li class="menu-item-has-children"><a href="about.php">About Us</a>
                             </li>
-
                         </ul>
                     </nav>
 
@@ -344,11 +276,8 @@ require_once './2_Controller/headerController.php';
                         </div>
                         <!--Off Canvas Widget Social Start-->
                         <div class="off-canvas-widget-social">
-                            <a href="#" title="Facebook"><i class="fa fa-facebook"></i></a>
-                            <a href="#" title="Twitter"><i class="fa fa-twitter"></i></a>
-                            <a href="#" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
-                            <a href="#" title="Youtube"><i class="fa fa-youtube-play"></i></a>
-                            <a href="#" title="Vimeo"><i class="fa fa-vimeo-square"></i></a>
+                            <a href="#" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                            
                         </div>
                         <!--Off Canvas Widget Social End-->
                     </div>

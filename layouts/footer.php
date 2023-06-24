@@ -51,5 +51,6 @@
 <script src="htmldemo.net/nelson/nelson/assets/js/vendor/bootstrap.min.js"></script>
 <script src="htmldemo.net/nelson/nelson/assets/js/plugins/plugins.js"></script>
 <script src="htmldemo.net/nelson/nelson/assets/js/main.js"></script>
-
+<script src="assets/js/code.js"></script>
+<script src="assets/js/wishlist.js"></script>
 </body>

@@ -1,6 +1,6 @@
 <?php
 require_once 'layouts/header.php';
-// sua cai nay
+
 require_once './2_Controller/indexController.php';
 
 ?>
@@ -17,8 +17,8 @@ require_once './2_Controller/indexController.php';
                                 <!--Hero Content start-->
                                 <div class="hero-content-2 center">
 
-                                    <h2>Creative Design <br> Modern & Exclusive Furniture</h2>
-                                        <a href="shop.html" class="btn">SHOP NOW</a>
+                                    <h2>Creative Design <br> Modern & Exclusive Chair</h2>
+                                        <a href="shop.php" class="btn">SHOP NOW</a>
 
                                 </div>
                                 <!--Hero Content end-->
@@ -38,8 +38,8 @@ require_once './2_Controller/indexController.php';
                                 <!--Hero Content start-->
                                 <div class="hero-content-2 center">
 
-                                    <h2>Creative Design <br> Modern & Exclusive Furniture</h2>
-                                        <a href="shop.html" class="btn">SHOP NOW</a>
+                                    <h2>Creative Design <br> Modern & Exclusive Chair</h2>
+                                        <a href="shop.php" class="btn">SHOP NOW</a>
 
                                 </div>
                                 <!--Hero Content end-->

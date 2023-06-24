@@ -1,5 +1,9 @@
+
+
 <?php
+session_start(); // khởi động phiên làm việc Session
 include 'layouts/header.php';
+require_once './2_Controller/cartController.php';
 ?>
         <!-- Page Banner Section Start -->
         <div class="page-banner-section section bg-image" data-bg="assets/images/bg/breadcrumb.png">
@@ -79,7 +83,7 @@ include 'layouts/header.php';
                             <div class="col-lg-6 col-12 mb-5">
                                 <!-- Calculate Shipping -->
                                 <div class="calculate-shipping">
-                                    <h4>Calculate Shipping</h4>
+                                    <h4>Shipping</h4>
                                     <form action="#">
                                         <div class="row">
                                             <div class="col-md-6 col-12 mb-25">
@@ -100,16 +104,14 @@ include 'layouts/header.php';
                                                     <option>Chittagong</option>
                                                 </select>
                                             </div>
-                                            <div class="col-md-6 col-12 mb-25">
-                                                <input type="text" placeholder="Postcode / Zip">
-                                            </div>
+                                            
                                             <div class="col-md-6 col-12 mb-25">
                                                 <button class="btn">Estimate</button>
                                             </div>
                                         </div>
                                     </form>
                                 </div>
-                               89 <!-- Discount Coupon -->
+                                <!-- Discount Coupon -->
                                 
                             </div>
 
@@ -118,9 +120,8 @@ include 'layouts/header.php';
                                 <div class="cart-summary">
                                     <div class="cart-summary-wrap">
                                         <h4>Cart Summary</h4>
-                                        <p>Sub Total <span>$75.00</span></p>
-                                        <p>Shipping Cost <span>$00.00</span></p>
-                                        <h2>Grand Total <span>$75.00</span></h2>
+                                        
+                                        <h3>Grand Total <span>$75.00</span></h3>
                                     </div>
                                     <div class="cart-summary-button">
                                         <button class="btn">Checkout</button>

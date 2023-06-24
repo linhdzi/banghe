@@ -80,5 +80,8 @@ function database_getAllCategory(){
         
     }
     return $data;
+    
 }
+
+
 

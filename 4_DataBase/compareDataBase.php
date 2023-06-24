@@ -17,13 +17,14 @@ function execute_query($query)
     return $result;
 }
 
-function database_getProductToCartById($id)
+function GetProductInLP($string_listProduct)
 {
     // Tạo truy vấn SQL
-        $sql = "SELECT * FROM products where id = '.$id.';
-        
-
-        ";
+    $sql = "SELECT products.name , products.picture , products.price,categories.name as brand, products.description
+            FROM products 
+            JOIN category_products ON products.id = category_products.product_id
+            JOIN categories ON category_products.category_id = categories.id
+            where products.id  IN (".$string_listProduct.")";
 
     // Thực thi truy vấn SQL và lấy kết quả
     $result = execute_query($sql);
@@ -42,6 +43,9 @@ function database_getProductToCartById($id)
     }
     return $data;
 }
+
+
+
 
 
 

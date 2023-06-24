@@ -1,16 +1,27 @@
-<?php
+    <?php
 
-// Khởi động session
+    // Khởi động session
+    require_once './3_Service/cartService.php';
+
+    // Lấy thông tin giỏ hàng từ session
 
 
-// Lấy thông tin giỏ hàng từ session
-$cart = isset($_SESSION['cart']) ? $_SESSION['cart'] : array();
+   if (!isset($_SESSION['cart'])) {
+    $_SESSION['cart'] = [];
+}
 
+if (isset($_GET['cartId'])) {
+    $cartid = $_GET['cartId'];
+    var_dump($cartid);
+}
 
-var_dump($cart);
-?>
+$_SESSION['cart']= $cartid;
 
-<!-- Hiển thị danh sách sản phẩm trong giỏ hàng -->
+var_dump($_SESSION['cart']);
 
-<!-- Hiển thị tổng số lượng sản phẩm và tổng giá tiền trong giỏ hàng -->
+    ?>
+
+    <!-- Hiển thị danh sách sản phẩm trong giỏ hàng -->
+
+    <!-- Hiển thị tổng số lượng sản phẩm và tổng giá tiền trong giỏ hàng -->
 

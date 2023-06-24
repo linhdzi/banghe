@@ -20,11 +20,14 @@ function execute_query($query)
 function GetProductInLP($string_listProduct)
 {
     // Tạo truy vấn SQL
-    $sql = "SELECT products.name , products.picture , products.price,categories.name as brand, products.description
-            FROM products 
-            JOIN category_products ON products.id = category_products.product_id
-            JOIN categories ON category_products.category_id = categories.id
-            where products.id  IN (".$string_listProduct.")";
+    
+
+    $sql = "SELECT distinct p.id, p.name , p.picture , p.price, c.name as brand, p.description
+            FROM products as p
+            join category_products as cp ON p.id = cp.product_id
+            JOIN categories as c ON c.id = (select category_id from category_products where product_id = p.id limit 1)
+            where p.id  IN (".$string_listProduct.")";
+        // var_dump($sql);
 
     // Thực thi truy vấn SQL và lấy kết quả
     $result = execute_query($sql);

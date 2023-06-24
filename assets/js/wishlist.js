@@ -1,35 +1,43 @@
 var wishlist = {
     init: function() {
-        wishlist.registerEvent();
+        wishlist.registerEvents();
     },
-    registerEvent: function() {
-        $('.Wishlist-product').off('click').on('click', function() {
+    registerEvents: function() {
+        $('.Add-to-wishlist').off('click').on('click', function() {
             var id = $(this).attr('product-id');
-            wishlist.saveWishlistWithSS(id);
+            wishlist.saveToWishlist(id);
+        });
+        $('.Remove-from-wishlist').off('click').on('click', function() {
+            var id = $(this).attr('product-id');
+            wishlist.removeFromWishlist(id);
         });
     },
-    saveWishlistWithSS: function(id) {
-        // create array_wishlist to save wishlist
-        var array_wishlist = [];
-        // check if wishlist exists
+    saveToWishlist: function(id) {
+        var wishlistItems = [];
         if (localStorage.getItem('Wishlist') !== null) {
-            // get wishlist
-            var listIdSave = JSON.parse(localStorage.getItem('Wishlist'));
-            // push new id in listIdSave
-            listIdSave.push(id);
-            // save array_wishlist
-            localStorage.setItem('Wishlist', JSON.stringify(listIdSave));
-        } else {
-            // create wishlist
-            array_wishlist.push(id);
-            localStorage.setItem('Wishlist', JSON.stringify(array_wishlist));
+            wishlistItems = JSON.parse(localStorage.getItem('Wishlist'));
         }
-        // go to wishlist page
-        var listProduct = JSON.parse(localStorage.getItem('Wishlist'));
-        // change from array to string
-        var listProduct_string = listProduct.toString();
-        var url = 'wishlist.php?ProductId=' + listProduct_string;
-        window.location.href = url;
+        if (wishlistItems.indexOf(id) === -1) {
+            wishlistItems.push(id);
+            localStorage.setItem('Wishlist', JSON.stringify(wishlistItems));
+            alert('Added to wishlist!');
+        } else {
+            alert('This item is already in your wishlist.');
+        }
+    },
+    removeFromWishlist: function(id) {
+        var wishlistItems = [];
+        if (localStorage.getItem('Wishlist') !== null) {
+            wishlistItems = JSON.parse(localStorage.getItem('Wishlist'));
+            var index = wishlistItems.indexOf(id);
+            if (index !== -1) {
+                wishlistItems.splice(index, 1);
+                localStorage.setItem('Wishlist', JSON.stringify(wishlistItems));
+                alert('Removed from wishlist!');
+                var url = "compare.php?ProductId=" + compareList.toString();
+      window.location.href = url;
+            }
+        }
     }
 };
 

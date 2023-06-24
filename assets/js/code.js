@@ -12,8 +12,8 @@ registereven : function(){
 
     })
     
-    $('.DeleProduct').off('click').on('click', function(){
-        var id = $(this).attr('pro_id');
+    $('.Dele').off('click').on('click', function(){
+        var id = $(this).attr('DELEID');
         
         compare.deleProductInCp(id);
 
@@ -49,15 +49,22 @@ if (localStorage.getItem('CompareList') !== null){
 },
 
 deleProductInCp: function(idDele) {
+   
     var compareList = JSON.parse(localStorage.getItem('CompareList')) || []; // lấy danh sách so sánh từ Local Storage hoặc khởi tạo một mảng rỗng
+    console.log(compareList)
     var findIndex = compareList.findIndex(function(item)
-    
     {
-      return item.id === idDele; // tìm kiếm phần tử có ID trùng với tham số id
+        // console.log(item);
+      return item == idDele; // tìm kiếm phần tử có ID trùng với tham số id
     });
+    console.log(findIndex);
     if (findIndex !== -1) {
       compareList.splice(findIndex, 1); // xóa phần tử khỏi danh sách so sánh
       localStorage.setItem('CompareList', JSON.stringify(compareList)); // lưu danh sách so sánh mới vào Local Storage
+      console.log(localStorage.getItem("CompareList"));
+      alert('Xóa thành công!')
+      var url = "compare.php?ProductId=" + compareList.toString();
+      window.location.href = url;
     }
   },
 
@@ -131,7 +138,7 @@ compare.init();
 
 
 
-// document.getElementById("SearchByCateBrand").onclick = function() {
-//     var searchInput = document.getElementById("Brand").value;
-//     window.location.href = "shop.php?cateBrand=" + encodeURIComponent(searchInput);
-//   };
+document.getElementById("SearchByCateBrand").onclick = function() {
+    var searchInput = document.getElementById("Brand").value;
+    window.location.href = "shop.php?cateBrand=" + encodeURIComponent(searchInput);
+  };

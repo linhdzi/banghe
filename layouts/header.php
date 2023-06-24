@@ -133,13 +133,15 @@ require_once './2_Controller/headerController.php';
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
-                                    <form class="d-flex" >
+                                    <form class="d-flex" method="GET" action="shop.php">
+                                    
                                     <input id="Brand" name="cateBrand" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                                       <button  id="SearchByCateBrand"  class="btn btn-outline-success" type="submit" value="insert" name="insert">Search</button>
-                                        
-                                        
                                       </form>
                                       
+                                     
+                                        
+
                                 </div>
                                 
 

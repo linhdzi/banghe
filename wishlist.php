@@ -1,5 +1,6 @@
 <?php
 include 'layouts/header.php';
+require_once './2_Controller/wishListController.php';
 ?>
         <!-- main-search start -->
         <div class="main-search-active">
@@ -68,7 +69,11 @@ include 'layouts/header.php';
                                         <td class="pro-addtocart"><button class="btn">Add to cart</button></td>
                                         <td class="pro-remove"><a href="#"><i class="fa fa-trash-o"></i></a></td>
                                     </tr>
+                                    <?php
                                     
+                                    showProductToWishLish();
+                                    
+                                    ?>
                                 </tbody>
                             </table>
                         </div>

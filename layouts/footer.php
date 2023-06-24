@@ -53,4 +53,6 @@
 <script src="htmldemo.net/nelson/nelson/assets/js/main.js"></script>
 <script src="assets/js/code.js"></script>
 <script src="assets/js/wishlist.js"></script>
+<!-- <script src="assets/js/search.js"></script> -->
+
 </body>

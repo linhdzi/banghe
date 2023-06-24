@@ -69,25 +69,7 @@ require_once './2_Controller/shopController.php';
                                     </div>
                                     <!-- Single Sidebar End  -->
                                     
-                                    <!-- Single Sidebar Start  -->
-                                    <div class="common-sidebar-widget">
-                                        <h3 class="sidebar-title">Compare Products</h3>
-                                        <div class="compare-products-list">
-                                            <ul>
-                                                <li>
-                                                    <a href="#" class="title">Cras neque metus</a>
-                                                    <a href="#" class="remove-compare"><i class="fa fa-close"></i></a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" class="title">Cras neque metus</a>
-                                                    <a href="#" class="remove-compare"><i class="fa fa-close"></i></a>
-                                                </li>
-                                            </ul>
-                                            <a href="#" class="clear-btn">Clear all</a>
-                                            <button type="button" class="btn compare-btn">Compare</button>
-                                        </div>
-                                    </div>
-                                    <!-- Single Sidebar End  -->
+                                  
                                   
                                 </div>
                                 <div class="col-lg-9 order-lg-2 order-1">
@@ -112,18 +94,7 @@ require_once './2_Controller/shopController.php';
                                         </div>
                                         
                                     </div>
-                                    <div class="row mb-30 mb-sm-40 mb-xs-30">
-                                        <div class="col">
-                                            <ul class="page-pagination">
-                                                <li class="active"><a href="#">01</a></li>
-                                                <li><a href="#">02</a></li>
-                                                <li><a href="#">03</a></li>
-                                                <li><a href="#">04</a></li>
-                                                <li><a href="#">05</a></li>
-                                                <li><a href="#">Next</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
+                                    
                                 </div>
                             </div>
                         </div>

@@ -21,13 +21,13 @@ function database_getProductByCategoryBrand($Brand)
     // Tạo truy vấn SQL
         $sql = '';
         if($Brand == null){
-            $sql = "SELECT products.name , products.picture , products.price,products.id
+            $sql = "SELECT distinct products.name , products.picture , products.price,products.id
             FROM products 
             JOIN category_products ON products.id = category_products.product_id
             JOIN categories ON category_products.category_id = categories.id";
         }
         else{
-            $sql = "SELECT products.name , products.picture , products.price,products.id
+            $sql = "SELECT distinct products.name , products.picture , products.price,products.id
             FROM products 
             JOIN category_products ON products.id = category_products.product_id
             JOIN categories ON category_products.category_id = categories.id

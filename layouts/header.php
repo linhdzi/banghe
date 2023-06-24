@@ -1,30 +1,33 @@
+<?php
+require_once './2_Controller/headerController.php';
+
+?>
+
 <!doctype html>
 <html class="no-js" lang="zxx">
-
-
-<!-- Mirrored from htmldemo.net/nelson/nelson/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 03 Jun 2023 07:40:16 GMT -->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Nelson - Furniture eCommerce Bootstrap 4 Template</title>
+    <title>Richfield Chairs</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <link rel="icon" href="assets/images/elysia.png"  type="image/x-icon">
+
     <!-- Place favicon.ico in the root directory -->
-    <link href="htmldemo.net/nelson/nelson/assets/images/favicon.ico" type="img/x-icon" rel="shortcut icon">
+    <link href="htmldemo.net/nelson/nelson/assets/images/elysia.ico" type="img/x-icon" rel="shortcut icon">
     <!-- All css files are included here. -->
-    <link rel="stylesheet" href="htmldemo.net/nelson/nelson/assets/css/vendor/bootstrap.min.css">
-    <link rel="stylesheet" href="htmldemo.net/nelson/nelson/assets/css/vendor/iconfont.min.css">
-    <link rel="stylesheet" href="htmldemo.net/nelson/nelson/assets/css/vendor/helper.css">
-    <link rel="stylesheet" href="htmldemo.net/nelson/nelson/assets/css/plugins/plugins.css">
-    <link rel="stylesheet" href="htmldemo.net/nelson/nelson/assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/vendor/iconfont.min.css">
+    <link rel="stylesheet" href="./assets/css/vendor/helper.css">
+    <link rel="stylesheet" href="./assets/css/plugins/plugins.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <!-- Modernizr JS -->
-    <script src="htmldemo.net/nelson/nelson/assets/js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="./assets/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
-
 <body>
-
     <div id="main-wrapper">
-
+        <div class="container">
         <!--Header section start-->
         <header class="header header-transparent header-sticky  d-lg-block d-none">
             <div class="header-deafult-area">
@@ -32,8 +35,8 @@
                     <div class="row align-items-center">
                         <div class="col-xl-1 col-lg-1 col-md-4 col-12">
                             <!--Logo Area Start-->
-                            <div class="logo-area">
-                                <a href="index.html"><img src="assets/images/logo.png" alt=""></a>
+                            <div class="logo-area" style="margin-left: 20%;">
+                                <a href="index.PHP"><img src="assets/images/elysia.png" style="height: 70px; width: auto;" alt=""></a>
                             </div>
                             <!--Logo Area End-->
                         </div>
@@ -42,88 +45,14 @@
                             <div class="header-menu-area text-center">
                                 <nav class="main-menu">
                                     <ul>
-                                        <li><a href="index.html">Home</a>
-                                            
-                                        </li>
-                                        <li><a href="shop.html">Shop</a>
-                                            <ul class="mega-menu four-column left-0">
-                                                <li><a href="#" class="item-link">Pages</a>
-                                                    <ul>
-                                                        <li><a href="about.html">About</a></li>
-                                                        <li><a href="compare.html">Compare</a></li>
-                                                        <li><a href="cart.html">Shopping Cart</a></li>
-                                                        <li><a href="checkout.html">Checkout</a></li>
-                                                        <li><a href="wishlist.html">Wishlist</a></li>
-                                                        <li><a href="my-account.html">My Account</a></li>
-                                                        <li><a href="login-register.html">Login Register</a></li>
-                                                        <li><a href="faq.html">Frequently Questions</a></li>
-                                                        <li><a href="404.html">Error 404</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="#" class="item-link">Shop Layout</a>
-                                                    <ul>
-                                                        <li><a href="shop.html">Shop</a></li>
-                                                        <li><a href="shop-three-column.html">Shop Three Column</a></li>
-                                                        <li><a href="shop-four-column.html">Shop Four Column</a></li>
-                                                        <li><a href="shop-right-sidebar.html">Shop Right Sidebar</a></li>
-                                                        <li><a href="shop-list-nosidebar.html">Shop List No Sidebar</a></li>
-                                                        <li><a href="shop-list-left-sidebar.html">Shop List Left Sidebar</a>
-                                                        </li>
-                                                        <li><a href="shop-list-right-sidebar.html">Shop List Right
-                                                                Sidebar</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="#" class="item-link">Product Details</a>
-                                                    <ul>
-                                                        <li><a href="single-product.html">Single Product</a></li>
-                                                        <li><a href="single-product-variable.html">Variable Product</a></li>
-                                                        <li><a href="single-product-affiliate.html">Affiliate Product</a>
-                                                        </li>
-                                                        <li><a href="single-product-group.html">Group Product</a></li>
-                                                        <li><a href="single-product-tabstyle-2.html">Product Left Tab</a>
-                                                        </li>
-                                                        <li><a href="single-product-tabstyle-3.html">Product Right Tab</a>
-                                                        </li>
-                                                        <li><a href="single-product-gallery-left.html">Product Gallery
-                                                                Left</a></li>
-                                                        <li><a href="single-product-gallery-right.html">Product Gallery
-                                                                Right</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="#" class="item-link">Product Details</a>
-                                                    <ul>
-                                                        <li><a href="single-product-sticky-left.html">Product Sticky
-                                                                Left</a></li>
-                                                        <li><a href="single-product-sticky-right.html">Product Sticky
-                                                                Right</a></li>
-                                                        <li><a href="single-product-slider-box.html">Product Box Slider</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-        
-                                        <li><a href="blog.html">Pages</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="blog.html">Blog Three Column</a></li>
-                                                <li><a href="blog-two-column.html">Blog Two Column</a></li>
-                                                <li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
-                                                <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
-                                                <li><a href="blog-details.html">Blog Details</a></li>
-                                                <li><a href="blog-details-gallery.html">Blog Details Gallery</a></li>
-                                                <li><a href="blog-details-audio.html">Blog Details Audio</a></li>
-                                                <li><a href="blog-details-video.html">Blog Details Video</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="htmldemo.net/nelson/nelson/contact.html">Contact</a></li>
+                                        <?php 
+                                        ShowMenu();
+                                        ?>
                                     </ul>
                                 </nav>
                             </div>
                             <!--Header Menu Area End-->
                         </div>
-
-                        
-
                         <div class="col-xl-5 col-lg-5 col-md-9 col-12 "  >
                             <!--Header Search And Mini Cart Area Start-->
                             <div class="row">
@@ -132,44 +61,28 @@
                                         <ul>
                                             <li class="currency-menu"><a href="#"><i class="flaticon-user"></i></a>
                                                 <!--Crunccy dropdown-->
-                                                <ul class="currency-dropdown">
-                                                    <!--Language Currency Start-->
-                                                    <li><a href="#">language</a>
-                                                        <ul>
-                                                            <li class="active"><a href="#"><img src="assets/images/icons/en-gb.png" alt="">English</a></li>
-                                                            <li><a href="#"><img src="assets/images/icons/de-de.png" alt="">French</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <!--Language Currency End-->
-                                                    <!--USD Currency Start-->
-                                                    <li><a href="#">Currency</a>
-                                                        <ul>
-                                                            <li><a href="#"> € Euro</a></li>
-                                                            <li><a href="#"> $ US Dollar</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <!--USD Currency End-->
+                                                <ul class="currency-dropdown">                                            
                                                     <!--Account Currency Start-->
-                                                    <li><a href="my-account.html">My account</a>
+                                                    <li><a href="my-account.php">My account</a>
                                                         <ul>
-                                                            <li><a href="login-register.html">Login</a></li>
-                                                            <li><a href="checkout.html">Checkout</a></li>
-                                                            <li><a href="my-account.html">My account</a></li>
-                                                            <li><a href="cart.html">Cart</a></li>
-                                                            <li><a href="wishlist.html">Wishlist</a></li>
+                                                            <li><a href="login-register.php">Login</a></li>
+                                                            <li><a href="checkout.php">Checkout</a></li>
+                                                            <li><a href="my-account.php">My account</a></li>
+                                                            <li><a href="cart.php">Cart</a></li>
+                                                            <li><a href="wishlist.php">Wishlist</a></li>
                                                         </ul>
                                                     </li>
                                                     <!--Account Currency End-->
                                                 </ul>
                                                 <!--Crunccy dropdown-->
                                             </li>
-                                            <li class="mini-cart"><a href="htmldemo.net/nelson/nelson/cart.html"><i class="flaticon-shopping-cart"></i> <span class="mini-cart-total">$300.00(2)</span></a>
+                                            <li class="mini-cart"><a href="cart.php"><i class="flaticon-shopping-cart"></i> <span class="mini-cart-total">$0</span></a>
                                                 <!--Mini Cart Dropdown Start-->
                                                 <div class="header-cart">
                                                     <ul class="cart-items">
                                                         <li class="single-cart-item">
                                                             <div class="cart-img">
-                                                                <a href="cart.html"><img src="assets/images/cart/cart1.jpg" alt=""></a>
+                                                                <a href="cart.php"><img src="./assets/images/cart/cart1.jpg" alt=""></a>
                                                             </div>
                                                             <div class="cart-content">
                                                                 <h5 class="product-name"><a href="single-product.html">Dell Inspiron 24</a></h5>
@@ -182,7 +95,7 @@
                                                         </li>
                                                         <li class="single-cart-item">
                                                             <div class="cart-img">
-                                                                <a href="cart.html"><img src="assets/images/cart/cart2.jpg" alt=""></a>
+                                                                <a href="cart.php"><img src="assets/images/cart/cart2.jpg" alt=""></a>
                                                             </div>
                                                             <div class="cart-content">
                                                                 <h5 class="product-name"><a href="single-product.html">Lenovo Ideacentre 300</a></h5>
@@ -195,13 +108,13 @@
                                                         </li>
                                                     </ul>
                                                     <div class="cart-total">
-                                                        <h5>Subtotal :<span class="float-right">$39.79</span></h5>
+                                                        <h5>Subtotal :<span class="float-right"></span></h5>
                                                         <h5>Eco Tax (-2.00) :<span class="float-right">$7.00</span></h5>
                                                         <h5>VAT (20%) : <span class="float-right">$0.00</span></h5>
                                                         <h5>Total : <span class="float-right">$46.79</span></h5>
                                                     </div>
                                                     <div class="cart-btn">
-                                                        <a href="htmldemo.net/nelson/nelson/cart.html">buy</a>
+                                                        <a href="cart.php">buy</a>
                                                         
                                                     </div>
                                                 </div>
@@ -211,19 +124,14 @@
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
-                                    <form class="d-flex" role="search">
-                                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                                        <button class="btn btn-outline-success" type="submit">Search</button>
+                                    <form class="d-flex" >
+                                        <input name="cateBrand" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                        <button class="btn btn-outline-success" type="submit" value="insert" name="insert">Search</button>
+                                        
                                       </form>
+                                     
                                 </div>
-                                
-
-                                <div class="col-sm-1"></div>
                               </div>
-
-
-
-                           
                             <!--Header Search And Mini Cart Area End-->
                         </div>
                     </div>
@@ -242,8 +150,8 @@
                                 <div class="row align-items-center">
                                     <div class="col-6 col-md-6">
                                         <div class="header-logo">
-                                            <a href="index.html">
-                                                <img src="assets/images/logo.png" class="img-fluid" alt="">
+                                            <a href="index.php">
+                                                <img src="./assets/images/logo.png" class="img-fluid" alt="">
                                             </a>
                                         </div>
                                     </div>
@@ -298,25 +206,20 @@
                     </div>
                     <nav class="offcanvas-navigation">
                         <ul>
-                            <li class="menu-item-has-children"><a href="#">Home</a>
-                                <ul class="submenu2">
-                                    <li><a href="index.html">Home 01</a></li>
-                                    <li><a href="index-2.html">Home 02</a></li>
-                                </ul>
+                            <li class="menu-item-has-children">
+                                <a href="index.php">Home</a>
                             </li>
                             <li class="menu-item-has-children"><a href="#">Shop</a>
                                 <ul class="submenu2">
                                     <li class="menu-item-has-children"><a href="#">Pages</a>
                                         <ul class="submenu2">
-                                            <li><a href="about.html">About</a></li>
-                                            <li><a href="compare.html">Compare</a></li>
-                                            <li><a href="cart.html">Shopping Cart</a></li>
-                                            <li><a href="checkout.html">Checkout</a></li>
-                                            <li><a href="wishlist.html">Wishlist</a></li>
-                                            <li><a href="my-account.html">My Account</a></li>
-                                            <li><a href="login-register.html">Login Register</a></li>
-                                            <li><a href="faq.html">Frequently Questions</a></li>
-                                            <li><a href="404.html">Error 404</a></li>
+                                            <li><a href="about.php">About</a></li>
+                                            <li><a href="compare.php">Compare</a></li>
+                                            <li><a href="cart.php">Shopping Cart</a></li>
+                                            <li><a href="checkout.php">Checkout</a></li>
+                                            <li><a href="wishlist.php">Wishlist</a></li>
+                                            <li><a href="my-account.php">My Account</a></li>
+                                            <li><a href="login-register.php">Login Register</a></li>
                                         </ul>
                                     </li>
                                     <li class="menu-item-has-children"><a href="#">Shop Layout</a>
@@ -362,20 +265,7 @@
 
                                 </ul>
                             </li>
-                            <li><a href="shop.html">New Arrivals</a></li>
-                            <li class="menu-item-has-children"><a href="#">Pages</a>
-                                <ul class="submenu2">
-                                    <li><a href="blog.html">Blog</a></li>
-                                    <li><a href="blog-two-column.html">Blog Two Column</a></li>
-                                    <li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
-                                    <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
-                                    <li><a href="blog-details.html">Blog Details</a></li>
-                                    <li><a href="blog-details-gallery.html">Blog Details Gallery</a></li>
-                                    <li><a href="blog-details-audio.html">Blog Details Audio</a></li>
-                                    <li><a href="blog-details-video.html">Blog Details Video</a></li>
-                                </ul>
-                            </li>
-                            <li class="menu-item-has-children"><a href="contact.html">Contact</a>
+                            <li class="menu-item-has-children"><a href="contact.php">Contact</a>
                             </li>
 
                         </ul>
@@ -386,23 +276,11 @@
                             <ul>
                                 <li class="menu-item-has-children"><a href="#">MY ACCOUNT </a>
                                     <ul class="submenu2">
-                                        <li><a href="login-register.html">Login</a></li>
-                                        <li><a href="checkout.html">Checkout</a></li>
-                                        <li><a href="my-account.html">My account</a></li>
-                                        <li><a href="cart.html">Cart</a></li>
-                                        <li><a href="wishlist.html">Wishlist</a></li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item-has-children"><a href="#">CURRENCY: USD </a>
-                                    <ul class="submenu2">
-                                        <li><a href="javascript:void(0)">€ Euro</a></li>
-                                        <li><a href="javascript:void(0)">$ US Dollar</a></li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item-has-children"><a href="#">LANGUAGE: EN-GB </a>
-                                    <ul class="submenu2">
-                                        <li><a href="javascript:void(0)"><img src="assets/images/icons/en-gb.png" alt=""> English</a></li>
-                                        <li><a href="javascript:void(0)"><img src="assets/images/icons/de-de.png" alt=""> Germany</a></li>
+                                        <li><a href="login-register.php">Login</a></li>
+                                        <li><a href="checkout.php">Checkout</a></li>
+                                        <li><a href="my-account.php">My account</a></li>
+                                        <li><a href="cart.php">Cart</a></li>
+                                        <li><a href="wishlist.php">Wishlist</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -451,4 +329,16 @@
                 <p class="form-description">Hit enter to search or ESC to close</p>
             </div>
         </div>
-        <!-- main-search start -->
+    </div>
+    </div>
+    <!-- Placed js at the end of the document so the pages load faster -->
+
+    <!-- All jquery file included here -->
+    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="https://maps.google.com/maps/api/js?sensor=false&amp;libraries=geometry&amp;v=3.22&amp;key=AIzaSyDAq7MrCR1A2qIShmjbtLHSKjcEIEBEEwM"></script>
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+    <script src="assets/js/plugins/plugins.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>

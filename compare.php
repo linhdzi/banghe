@@ -11,7 +11,7 @@ require_once './2_Controller/compareController.php';
                 <div class="page-banner text-start">
                     <h2>Compare</h2>
                     <ul class="page-breadcrumb">
-                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.php">Home</a></li>
                         <li>Compare</li>
                     </ul>
                 </div>

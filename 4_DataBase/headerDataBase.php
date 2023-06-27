@@ -20,7 +20,7 @@ function execute_query1($query)
 function AllMenu()
 {
     // Tạo truy vấn SQL
-    $sql = "select * from menunav";
+    $sql = "select * from menudata";
 
 
     // Thực thi truy vấn SQL và lấy kết quả

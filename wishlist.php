@@ -55,20 +55,13 @@ require_once './2_Controller/wishListController.php';
                                         <th class="pro-thumbnail">Image</th>
                                         <th class="pro-title">Product</th>
                                         <th class="pro-price">Price</th>
-                                       >
+                                       
                                         <th class="pro-addtocart">Add to cart</th>
                                         <th class="pro-remove">Remove</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <td class="pro-thumbnail"><a href="#"><img src="assets/images/product/product-1.jpg" alt="Product"></a></td>
-                                        <td class="pro-title"><a href="#">Black Cable Restorer</a></td>
-                                        <td class="pro-price"><span>$25.00</span></td>
-                                        
-                                        <td class="pro-addtocart"><button class="btn">Add to cart</button></td>
-                                        <td class="pro-remove"><a href="#"><i class="fa fa-trash-o"></i></a></td>
-                                    </tr>
+                                    
                                     <?php
                                     
                                     showProductToWishLish();

@@ -34,6 +34,20 @@ require_once './3_Service/singleProductService.php';
 
     }
 
+    function showCompareWishLish(){
+        global $ProductDetail;
+        $html = '';
+        
+            $html = $html . '
+            <a href="javascript:void(0)" class="Wishlist-product" product-id ="'.$ProductDetail["id"].'">Add to Wishlist</a>
+            <a href="javascript:void(0)" class="Compare-product" product-id ="'. $ProductDetail["id"].'">Compare</a>
+            ';
+        
+        echo $html;
+
+    }
+
+
     function showDescription(){
         global $ProductDetail;
         $Desc = $ProductDetail['description'];
@@ -63,7 +77,7 @@ require_once './3_Service/singleProductService.php';
     }
 
 
-    
+ 
 
 
 
@@ -88,11 +102,14 @@ require_once './3_Service/singleProductService.php';
                                 </a>
 
                                 <div class="product-action">
-                                    <ul>
-                                        <li><a href="cart.html"><i class="fa fa-cart-plus"></i></a></li>
-                                        <li class="Compare-product" product-id ="'. $row["id"].'" ><a href="javascript:void(0)"><i class="fa-solid fa-code-compare" style="color: #000000;"></i></a></li>
-                                        <li><a href="wishlit.html"><i class="fa fa-heart-o"></i></a></li>
-                                    </ul>
+                                <ul>
+                    
+                                <li class="Add-to-cart" product-id ="'. $row["id"].'"><a href="cart.php?cartId='.$row["id"].'"><i class="fa fa-cart-plus"></i></a></li>   
+                                
+                                    
+                                    <li class="Compare-product" product-id ="'. $row["id"].'" ><a href="javascript:void(0)"><i class="fa-solid fa-code-compare" style="color: #000000;"></i></a></li>
+                                    <li class="Wishlist-product" product-id ="'. $row["id"].'" ><a href="javascript:void(0)"><i class="fa fa-heart-o"></i></a></li>
+                                </ul>
                                 </div>
                             </div>
                             <div class="product-content">

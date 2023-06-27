@@ -130,8 +130,9 @@ require_once './2_Controller/singleProductController.php';
                                             </form>
                                         </div>
                                         <div class="wishlist-compare-btn">
-                                            <a href="#" class="wishlist-btn">Add to Wishlist</a>
-                                            <a href="#" class="add-compare">Compare</a>
+                                            <?php
+                                             showCompareWishLish();
+                                            ?>
                                         </div>
                                         <div class="product-meta">
                                             <span class="posted-in">
@@ -196,21 +197,7 @@ require_once './2_Controller/singleProductController.php';
             </div>
         </div>
         <!--Product section end-->
-        
-     
-
-
-    <!-- Placed js at the end of the document so the pages load faster -->
-
-    <!-- All jquery file included here -->
-    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
-    <script src="https://maps.google.com/maps/api/js?sensor=false&amp;libraries=geometry&amp;v=3.22&amp;key=AIzaSyDAq7MrCR1A2qIShmjbtLHSKjcEIEBEEwM"></script>
-    <script src="assets/js/vendor/bootstrap.min.js"></script>
-    <script src="assets/js/plugins/plugins.js"></script>
-    <script src="assets/js/main.js"></script>
-
-</body>
-
-
-<!-- Mirrored from htmldemo.net/nelson/nelson/single-product-variable.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 03 Jun 2023 07:40:52 GMT -->
-</html>
+ <?php
+ 
+ include 'layouts/footer.php';
+ ?>

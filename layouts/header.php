@@ -80,7 +80,11 @@ require_once './2_Controller/headerController.php';
                                                             <li><a href="login-register.html">Login</a></li>
 
                                                             <li><a href="my-account.html">My account</a></li>
+<<<<<<< HEAD
                                                             <li><a id="Add-to-cart" href="javascript:void(0)">Cart</a></li>
+=======
+                                                            <li><a  id="Add-to-cart"  href="javascript:void(0)">Cart</a></li>
+>>>>>>> 1d8bbda4ff7828f2aed4e5f7413364afaaea8d04
                                                             <li><a href="wishlist.html">Wishlist</a></li>
                                                         </ul>
                                                     </li>

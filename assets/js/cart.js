@@ -2,7 +2,10 @@
 var cart = {
     
     init: function() {
+<<<<<<< HEAD
         cart.loadCartInfo();
+=======
+>>>>>>> 1d8bbda4ff7828f2aed4e5f7413364afaaea8d04
         cart.registerEvents();
     },
     registerEvents: function() {
@@ -14,6 +17,7 @@ var cart = {
             var id = $(this).attr('product-id');
             cart.removeFromCart(id);
         });
+<<<<<<< HEAD
         $('.btn-cart-header').off('click').on('click', function(){
             var cartItems = [];
             if (localStorage.getItem('Cart') !== null) {
@@ -69,6 +73,11 @@ var cart = {
             cart.registerEvents();
         })
     },
+=======
+
+        
+    },
+>>>>>>> 1d8bbda4ff7828f2aed4e5f7413364afaaea8d04
     addToCart: function(id) {
         var cartItems = [];
         if (localStorage.getItem('Cart') !== null) {
@@ -120,5 +129,8 @@ document.getElementById("SearchByCateBrand").onclick = function() {
 
 
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 1d8bbda4ff7828f2aed4e5f7413364afaaea8d04

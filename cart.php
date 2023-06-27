@@ -27,6 +27,7 @@ require_once './2_Controller/cartController.php';
     <div class="container">
         <div class="row">
 
+<<<<<<< HEAD
             <div class="col-12">
                 <!-- Cart Table -->
                 <div class="cart-table table-responsive mb-30">
@@ -42,6 +43,33 @@ require_once './2_Controller/cartController.php';
                             </tr>
                         </thead>
                         <tbody>
+=======
+                    <div class="col-12">
+                        <!-- Cart Table -->
+                        <div class="cart-table table-responsive mb-30">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="pro-thumbnail">Image</th>
+                                        <th class="pro-title">Product</th>
+                                        <th class="pro-price">Price</th>
+                                        <th class="pro-quantity">Quantity</th>
+                                        <th class="pro-subtotal">Total</th>
+                                        <th class="pro-remove">Remove</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    
+                                   
+                                    <?php
+                                    
+                                    showProductToCart();
+                                    
+                                    ?>
+                                </tbody>
+                            </table>
+                        </div>
+>>>>>>> 1d8bbda4ff7828f2aed4e5f7413364afaaea8d04
 
 
                             <?php

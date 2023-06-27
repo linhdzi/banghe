@@ -23,7 +23,7 @@ function connectMenu(){
     $host = "localhost";
     $username = "root";
     $password = "password";
-    $dbname = "menudata";
+    $dbname = "menudata1";
 
     // Kết nối đến CSDL
     $conn = mysqli_connect($host, $username, $password, $dbname);

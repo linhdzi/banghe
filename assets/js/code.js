@@ -20,6 +20,8 @@ registereven : function(){
     })
 
 
+    
+
 },
 
 
@@ -62,7 +64,7 @@ deleProductInCp: function(idDele) {
       compareList.splice(findIndex, 1); // xóa phần tử khỏi danh sách so sánh
       localStorage.setItem('CompareList', JSON.stringify(compareList)); // lưu danh sách so sánh mới vào Local Storage
       console.log(localStorage.getItem("CompareList"));
-      alert('Xóa thành công!')
+      alert('Xóa thành công!');
       var url = "compare.php?ProductId=" + compareList.toString();
       window.location.href = url;
     }
@@ -137,8 +139,3 @@ compare.init();
 
 
 
-
-document.getElementById("SearchByCateBrand").onclick = function() {
-    var searchInput = document.getElementById("Brand").value;
-    window.location.href = "shop.php?cateBrand=" + encodeURIComponent(searchInput);
-  };

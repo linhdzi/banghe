@@ -8,14 +8,15 @@ require_once './2_Controller/headerController.php';
 
 
 <!-- Mirrored from htmldemo.net/nelson/nelson/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 03 Jun 2023 07:40:16 GMT -->
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Chair Shop </title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-    <link rel="icon" href="assets/images/elysia.png"  type="image/x-icon">
+
+    <link rel="icon" href="assets/images/elysia.png" type="image/x-icon">
 
     <!-- Place favicon.ico in the root directory -->
     <link href="htmldemo.net/nelson/nelson/assets/images/elysia.ico" type="img/x-icon" rel="shortcut icon">
@@ -52,7 +53,7 @@ require_once './2_Controller/headerController.php';
                             <div class="header-menu-area text-center">
                                 <nav class="main-menu">
                                     <ul>
-                                        <?php 
+                                        <?php
                                         ShowMenu();
                                         ?>
                                     </ul>
@@ -61,9 +62,9 @@ require_once './2_Controller/headerController.php';
                             <!--Header Menu Area End-->
                         </div>
 
-                        
 
-                        <div class="col-xl-5 col-lg-5 col-md-9 col-12 "  >
+
+                        <div class="col-xl-5 col-lg-5 col-md-9 col-12 ">
                             <!--Header Search And Mini Cart Area Start-->
                             <div class="row">
                                 <div class="col-sm-5">
@@ -72,14 +73,14 @@ require_once './2_Controller/headerController.php';
                                             <li class="currency-menu"><a href="#"><i class="flaticon-user"></i></a>
                                                 <!--Crunccy dropdown-->
                                                 <ul class="currency-dropdown">
-                                                   
+
                                                     <!--Account Currency Start-->
                                                     <li><a href="my-account.html">My account</a>
                                                         <ul>
                                                             <li><a href="login-register.html">Login</a></li>
-                                                            
+
                                                             <li><a href="my-account.html">My account</a></li>
-                                                            <li><a href="cart.php">Cart</a></li>
+                                                            <li><a id="Add-to-cart" href="javascript:void(0)">Cart</a></li>
                                                             <li><a href="wishlist.html">Wishlist</a></li>
                                                         </ul>
                                                     </li>
@@ -87,10 +88,14 @@ require_once './2_Controller/headerController.php';
                                                 </ul>
                                                 <!--Crunccy dropdown-->
                                             </li>
-                                            <li class="mini-cart"><a href="cart.php"><i class="flaticon-shopping-cart"></i> <span class="mini-cart-total">$300.00(2)</span></a>
+                                            <li class="mini-cart">
+                                                <a href="javascript:void(0)" class="btn-cart-header">
+                                                    <i class="flaticon-shopping-cart"></i>
+                                                    <span class="mini-cart-total">$300.00(2)</span>
+                                                </a>
                                                 <!--Mini Cart Dropdown Start-->
                                                 <div class="header-cart">
-                                                    <ul class="cart-items">
+                                                    <ul class="cart-items header-cart-items">
                                                         <li class="single-cart-item">
                                                             <div class="cart-img">
                                                                 <a href="cart.php"><img src="assets/images/cart/cart1.jpg" alt=""></a>
@@ -114,43 +119,44 @@ require_once './2_Controller/headerController.php';
                                                                 <span class="product-price">$23.39</span>
                                                             </div>
                                                             <div class="cart-item-remove">
-                                                                <a title="Remove" href="#"><i class="fa fa-trash"></i></a>
+                                                                <a title="Remove" class="Remove-from-cart" href="javascript:void(0)"><i class="fa fa-trash"></i></a>
                                                             </div>
                                                         </li>
                                                     </ul>
                                                     <div class="cart-total">
-                                                        
+
                                                         <h5>Total : <span class="float-right">$46.79</span></h5>
                                                     </div>
                                                     <div class="cart-btn">
                                                         <a href="htmldemo.net/nelson/nelson/cart.html">buy</a>
-                                                        
+
                                                     </div>
                                                 </div>
                                                 <!--Mini Cart Dropdown End-->
                                             </li>
+                                        
                                         </ul>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <form class="d-flex" method="GET" action="shop.php">
-                                    
-                                    <input id="Brand" name="cateBrand" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                                      <button  id="SearchByCateBrand"  class="btn btn-outline-success" type="submit" value="insert" name="insert">Search</button>
-                                      </form>
-                                      
-                                     
-                                        
+
+                                        <input id="Brand" name="cateBrand" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                        <button id="SearchByCateBrand" class="btn btn-outline-success" type="submit" value="insert" name="insert">Search</button>
+                                    </form>
+
+
+
 
                                 </div>
-                                
+
 
                                 <div class="col-sm-1"></div>
-                              </div>
+                            </div>
 
 
 
-                           
+
                             <!--Header Search And Mini Cart Area End-->
                         </div>
                     </div>
@@ -170,7 +176,7 @@ require_once './2_Controller/headerController.php';
                                     <div class="col-6 col-md-6">
                                         <div class="" style="padding-right: 10px;">
                                             <a href="index.php">
-                                                <img src="assets/images/elysia.png" style="width: 68px; height: auto;"  class="img-fluid" alt="">
+                                                <img src="assets/images/elysia.png" style="width: 68px; height: auto;" class="img-fluid" alt="">
                                             </a>
                                         </div>
                                     </div>
@@ -226,12 +232,12 @@ require_once './2_Controller/headerController.php';
                     <nav class="offcanvas-navigation">
                         <ul>
                             <li class="menu-item-has-children"><a href="index.php">Home</a>
-                                
+
                             </li>
                             <li class="menu-item-has-children"><a href="shop.php">Shop</a>
-                                
+
                             </li>
-                            
+
                             <li class="menu-item-has-children"><a href="contact.php">Contact</a>
                             </li>
                             <li class="menu-item-has-children"><a href="about.php">About Us</a>
@@ -279,7 +285,7 @@ require_once './2_Controller/headerController.php';
                         <!--Off Canvas Widget Social Start-->
                         <div class="off-canvas-widget-social">
                             <a href="#" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
-                            
+
                         </div>
                         <!--Off Canvas Widget Social End-->
                     </div>

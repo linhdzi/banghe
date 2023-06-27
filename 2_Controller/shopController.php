@@ -60,9 +60,7 @@ function hienthiTheobrand(){
         <!--  Single Grid product Start -->
         <div class="single-grid-product mb-40">
             <div class="product-image">
-                <div class="product-label">
-                    <span>-20%</span>
-                </div>
+                
                 <a href="singleProduct.php?ProductId='.$row['id'].'">
                     <img src="'. $row["picture"].'" class="img-fluid" alt="">
                 
@@ -71,7 +69,7 @@ function hienthiTheobrand(){
                 <div class="product-action">
                     <ul>
                     
-                    <li name="cartId='.$row["id"].'"><a href="cart.php?cartId='.$row["id"].'"><i class="fa fa-cart-plus"></i></a></li>   
+                    <li class="Add-to-cart" product-id ="'. $row["id"].'"  ><a href="javascript:void(0)"><i class="fa fa-cart-plus"></i></a></li>   
                     
                         
                         <li class="Compare-product" product-id ="'. $row["id"].'" ><a href="javascript:void(0)"><i class="fa-solid fa-code-compare" style="color: #000000;"></i></a></li>
@@ -81,7 +79,7 @@ function hienthiTheobrand(){
             </div>
               <div class="product-content">
               <h3 class="title"> <a href="singleProduct.php?ProductId='.$row['id'].'"> '. $row["name"].' </a></h3>
-                <p class="product-price"><span class="discounted-price">'. $row["price"].'$ -</span> <span class="main-price discounted">'. $row["price"].'$</span></p>
+                <p class="product-price"><span class="discounted-price">'. $row["price"].'$ </span></p>
             </div>
         </div>
         <!--  Single Grid product End -->

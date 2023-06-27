@@ -16,7 +16,7 @@ function showProductToCompare()
     foreach ($products as $row) {
         $html = $html . '
         <td class="product-image-title">
-    <a href="#" class="image"><img src="' . $row['picture'] . '" alt="Compare Product"></a>
+    <a href="singleProduct.php?ProductId='.$row['id'].'" class="image"><img src="' . $row['picture'] . '" alt="Compare Product"></a>
     <a href="#" class="category">' . $row['brand'] . '</a>
     <a href="#" class="title">' . $row['name'] . '</a>
     
@@ -75,7 +75,7 @@ function showIdtoAdd(){
     $html = '';
     foreach ($result as $row) {
         $html = $html . '
-        <td class="pro-addtocart" ADDID="'.$row['id'].'"  ><a href="#" class="add-to-cart" tabindex="0"><span>ADD TO CART</span></a></td>
+        <td  class="Add-to-cart pro-addtocart" product-id ="'. $row["id"].'"  ><a href="javascript:void(0)" class="add-to-cart" tabindex="0"><span>ADD TO CART</span></a></td>
             ';
     }
     echo $html;

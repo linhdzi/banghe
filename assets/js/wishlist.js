@@ -3,7 +3,7 @@ var wishlist = {
         wishlist.registerEvents();
     },
     registerEvents: function() {
-        $('.Add-to-wishlist').off('click').on('click', function() {
+        $('.Wishlist-product').off('click').on('click', function() {
             var id = $(this).attr('product-id');
             wishlist.saveToWishlist(id);
         });
@@ -21,9 +21,21 @@ var wishlist = {
             wishlistItems.push(id);
             localStorage.setItem('Wishlist', JSON.stringify(wishlistItems));
             alert('Added to wishlist!');
+            
+        
+
+
         } else {
             alert('This item is already in your wishlist.');
         }
+             //change to compare product page
+             var listProduct = JSON.parse(localStorage.getItem('Wishlist'));
+             //change form array to string
+             var listProduct_string = listProduct.toString();
+             var url = 'wishlist.php?ProductId=' + listProduct_string;
+             window.location.href=url;
+     
+
     },
     removeFromWishlist: function(id) {
         var wishlistItems = [];
@@ -34,10 +46,11 @@ var wishlist = {
                 wishlistItems.splice(index, 1);
                 localStorage.setItem('Wishlist', JSON.stringify(wishlistItems));
                 alert('Removed from wishlist!');
-                var url = "compare.php?ProductId=" + compareList.toString();
-      window.location.href = url;
+                var url = "wishlist.php?ProductId=" + wishlistItems.toString();
+                window.location.href = url;
             }
         }
+        
     }
 };
 

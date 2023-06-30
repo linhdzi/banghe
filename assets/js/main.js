@@ -483,30 +483,10 @@
             }
         }
         $button.parent().find('input').val(newVal);
-        $button.parent().find('input').val(newVal);
         var price = $button.closest('tr').attr('data-price');
         var newPrice = price * newVal;
-        
-        $button.closest('tr').find('.pro-subtotal span').text(`$${newPrice}`);
-
-       
-
-
-        var super_total = 0;
-        var super_quantity = 0;
-        $('.cart-table-row').each(function(index, element){
-        
-            var price = $(element).attr('data-price');
-            var quantity = $(element).find('.quantity-number').val();
-            super_total += price*quantity;
-            super_quantity += quantity;
-        })
-        $('.cart-total span').text(`$ ${super_total}`);
-        $('.cart-summary-wrap span').text(`$ ${super_total}`);
-
-        // $('.number-product-incart span').text($newVal);
-        $('.mini-cart-total').text('').text(`$ ${super_total} (${super_quantity})`);
-
+        alert(newPrice);
+        $button.closest('tr').find('.pro-subtotal span').text(newPrice);
     });
     /* -------------------------
         Venobox Active
